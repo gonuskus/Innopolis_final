@@ -26,21 +26,7 @@ jobs:
           pip install pytest requests selenium faker
           pip install webdriver-manager==3.5.2
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: python-flake8
-        # You may pin to the exact commit or the version.
-        # uses: julianwachholz/flake8-action@75749239077651dfd0ecbe405899cdcb0673ee8f
-        uses: julianwachholz/flake8-action@v2.0.2
-        with:
-          # The name of the check to add annotations to. Generally the same as the job that uses this action
-          checkName:
-          # Path to use for flake8
-          path: # optional, default is .
-          # Package names of flake8 plugins passed on to the `pip install` command.
-          plugins: # optional, default is
-          # Specify a config file for flake8
-          config: # optional
-          # Used for internal tests
-          isTest: # optional, default is false
+      - uses: docker://github/super-linter:v2.1.0
       - name: Test with pytest
         run: |
           pytest
