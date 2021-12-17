@@ -54,7 +54,7 @@ jobs:
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: gonuskus/gonuskus.github.io
           publish_branch: main  # default: gh-pages
           publish_dir: allure-history
