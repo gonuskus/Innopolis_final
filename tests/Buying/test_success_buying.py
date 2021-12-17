@@ -13,4 +13,5 @@ def test_success_buying(app):
         pass
     with allure.step("Проверить успешность покупки"):
         pass
-
+    with allure.step("Закрыть страницу магазина"):
+        pass
