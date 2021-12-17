@@ -3,11 +3,8 @@
 
 [![Python application](https://github.com/gonuskus/Innopolis_final/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/gonuskus/Innopolis_final/actions/workflows/main.yml)
 
-Объектом тестирования является [Web-портал продуктового магазина](https://berpress.github.io/online-grocery-store/)
-
-Цель тестирования - проверка базовых функций web-портала магазина.
-
-
+Реализован проект тестирования [web-портала продуктового магазина](https://berpress.github.io/online-grocery-store/)
+Результатом работы автотестирования, является сгенерированный Allure отчет с результатами прогона тестов.
 
 
 ### Инструкция установки и запуска тестов:
