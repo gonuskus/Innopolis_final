@@ -1,14 +1,9 @@
 
 # Автоматизированное тестирование Product Shop
 
-Проверка качества кода
 [![flake8](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_flake8.yml/badge.svg)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_flake8.yml)
-
-CI/CD
-[![workflow_pytest](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml/badge.svg)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml)
-
-Allure report
-[![Allure Report](https://img.shields.io/static/v1?label=AllureReport&message=informational&color=blue)](https://gonuskus.github.io/Innopolis_final/)
+[![pytest](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml/badge.svg)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml)
+[![Allure](https://img.shields.io/static/v1?label=AllureReport&message=informational&color=blue)](https://gonuskus.github.io/Innopolis_final/)
 
 Реализован проект тестирования [web-портала продуктового магазина](https://berpress.github.io/online-grocery-store/)
 Результатом работы автотестирования, является сгенерированный Allure отчет с результатами прогона тестов.
