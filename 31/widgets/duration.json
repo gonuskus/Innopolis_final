@@ -1,0 +1,51 @@
+[ {
+  "uid" : "9902c3d795c6b9bb",
+  "name" : "Проверка невозможности покупки при недостаточном балансе",
+  "time" : {
+    "start" : 1639765414961,
+    "stop" : 1639765414961,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2866c900b5313d20",
+  "name" : "Удаление выбранного продукта из корзины",
+  "time" : {
+    "start" : 1639765414956,
+    "stop" : 1639765414957,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22b92438a3521de4",
+  "name" : "Проверка успешности покупки",
+  "time" : {
+    "start" : 1639765414964,
+    "stop" : 1639765414964,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7628c542925b3a3c",
+  "name" : "Проверка успешного посика продуктов на сайте магазина",
+  "time" : {
+    "start" : 1639765414969,
+    "stop" : 1639765414969,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c2892bb303d115c",
+  "name" : "Проверка поиска несуществующего продукта",
+  "time" : {
+    "start" : 1639765414967,
+    "stop" : 1639765414967,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
