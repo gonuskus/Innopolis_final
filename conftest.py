@@ -7,7 +7,8 @@ from fixtures.application import Application
 def app(request):
     base_url = request.config.getoption("--base-url")
     allure_dir = request.config.getoption("--alluredir")
-    fixture = Application(base_url, allure_dir)
+    headless = request.config.getoption("--headless")
+    fixture = Application(base_url, allure_dir, headless)
     fixture.wd.implicitly_wait(10)
     fixture.wd.maximize_window()
     yield fixture
@@ -20,16 +21,16 @@ def pytest_addoption(parser):
         action="store",
         default="https://qacoursemoodle.innopolis.university",
         help="enter base_url",
-    )
+    ),
     parser.addoption(
         "--alluredir",
         action="store",
-        default="/reports/allure_results",
+        default="/tmp/allure_results",
         help="enter alluredir",
-    )
+    ),
     parser.addoption(
         "--headless",
         action="store",
         default=True,
         help="launching browser without gui",
-    )
+    ),
