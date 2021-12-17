@@ -7,6 +7,10 @@
 CI/CD
 [![workflow_pytest](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml/badge.svg)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml)
 
+Allure report
+[![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)](https://allure-examples.github.io/allure-junit5-maven/)
+[![Allure Report](https://img.shields.io/badge/Allure%20Report-deployed-yellowgreen)](https://gonuskus.github.io/Innopolis_final/)
+
 Реализован проект тестирования [web-портала продуктового магазина](https://berpress.github.io/online-grocery-store/)
 Результатом работы автотестирования, является сгенерированный Allure отчет с результатами прогона тестов.
 
