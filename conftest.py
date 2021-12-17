@@ -21,3 +21,15 @@ def pytest_addoption(parser):
         default="https://qacoursemoodle.innopolis.university",
         help="enter base_url",
     )
+    parser.addoption(
+        "--alluredir",
+        action="store",
+        default="/reports/allure_results",
+        help="enter alluredir",
+    )
+    parser.addoption(
+        "--headless",
+        action="store",
+        default=True,
+        help="launching browser without gui",
+    )

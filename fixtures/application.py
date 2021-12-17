@@ -16,7 +16,7 @@ class Application:
     def __init__(self, base_url, allure_dir):
         logger.setLevel('INFO')
         options: Options = Options()
-        # options.headless = True
+        options.headless = equest.config.getoption("--headless")
         self.create_dir_for_report(allure_dir)
         self.wd = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
         self.login_page = LoginPage(self)

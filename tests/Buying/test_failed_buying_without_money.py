@@ -13,3 +13,4 @@ def test_failed_buying_without_money(app):
         pass
     with allure.step("Проверить предупреждение о невозможности покупки"):
         pass
+    
