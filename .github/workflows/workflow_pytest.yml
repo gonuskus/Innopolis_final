@@ -26,30 +26,13 @@ jobs:
       - name: Test with pytest
         run: |
           pytest  --alluredir /tmp/allure_results
-      - name: Get Allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
+      - name: Allure report V2
+        # You may pin to the exact commit or the version.
+        # uses: QuintilianoNery/action-allure-report-V2@0695401fc18f6a083fab548315fc10f1cc4f56e6
+        uses: QuintilianoNery/action-allure-report-V2@0.2.0
         with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@master
-        if: always()
-        #id: allure-report
-        with:
-          allure_results: /tmp/allure-results
-          #gh_pages: gh-pages
-          #allure_report: allure-report
-          allure_history: /tmp/allure-history
-          keep_reports: 20
-
-      - name: Deploy report to Github Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+          # Allure test result data dir
+          results-dir: /tmp/allure_results
+          # Allure report target dir
+          report-dir: /tmp/allure_results
 
