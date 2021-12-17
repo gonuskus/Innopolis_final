@@ -1,11 +1,6 @@
-import logging
-
 import pytest
 
 from fixtures.application import Application
-
-logger = logging.getLogger()
-logging.getLogger("flake8").setLevel(logging.WARNING)
 
 
 @pytest.fixture(scope="session")
