@@ -5,9 +5,19 @@ name: run_pytest
 
 on:
   push:
-    branches: [ main ]
+    paths:
+      - 'fixtures/**'
+      - 'locators/**'
+      - 'models/**'
+      - 'pages/**'
+      - 'tests/**'
   pull_request:
-    branches: [ main ]
+     paths:
+      - 'fixtures/**'
+      - 'locators/**'
+      - 'models/**'
+      - 'pages/**'
+      - 'tests/**'
 
 jobs:
   build:
