@@ -1,0 +1,81 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f4d42c6cb20>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f4d42c6cb20>> = <pages.basket_form.BasketForm object at 0x7f4d42c6cb20>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7f4d42c6cb20> = <fixtures.application.Application object at 0x7f4d42cb8100>.basket_form",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины после совершения покупки",
+        "uid" : "617593345611aacb",
+        "parentUid" : "9cecbef9f1347326c4ac2548b1019373",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639933177228,
+          "stop" : 1639933179475,
+          "duration" : 2247
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9cecbef9f1347326c4ac2548b1019373"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 122). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x558e1a3c5ee3 <unknown>\n#1 0x558e19e93608 <unknown>\n#2 0x558e19ed1044 <unknown>\n#3 0x558e19eceaf4 <unknown>\n#4 0x558e19ecc2da <unknown>\n#5 0x558e19ecace2 <unknown>\n#6 0x558e19ebe7b8 <unknown>\n#7 0x558e19ee7272 <unknown>\n#8 0x558e19ebe063 <unknown>\n#9 0x558e19ee737e <unknown>\n#10 0x558e19efa3bc <unknown>\n#11 0x558e19ee7163 <unknown>\n#12 0x558e19ebcbfc <unknown>\n#13 0x558e19ebdc05 <unknown>\n#14 0x558e1a3f7baa <unknown>\n#15 0x558e1a40d651 <unknown>\n#16 0x558e1a3f8b05 <unknown>\n#17 0x558e1a40ea68 <unknown>\n#18 0x558e1a3ed05f <unknown>\n#19 0x558e1a429818 <unknown>\n#20 0x558e1a429998 <unknown>\n#21 0x558e1a444eed <unknown>\n#22 0x7fbe07ce6609 <unknown>",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины до совершения покупки",
+        "uid" : "6365156efa55b7fb",
+        "parentUid" : "8f0b90b5001378584656c4a9a3fa65ec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639933179509,
+          "stop" : 1639933182675,
+          "duration" : 3166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f0b90b5001378584656c4a9a3fa65ec"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 371). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x558e1a3c5ee3 <unknown>\n#1 0x558e19e93608 <unknown>\n#2 0x558e19ed1044 <unknown>\n#3 0x558e19eceaf4 <unknown>\n#4 0x558e19ecc2da <unknown>\n#5 0x558e19ecace2 <unknown>\n#6 0x558e19ebe7b8 <unknown>\n#7 0x558e19ee7272 <unknown>\n#8 0x558e19ebe063 <unknown>\n#9 0x558e19ee737e <unknown>\n#10 0x558e19efa3bc <unknown>\n#11 0x558e19ee7163 <unknown>\n#12 0x558e19ebcbfc <unknown>\n#13 0x558e19ebdc05 <unknown>\n#14 0x558e1a3f7baa <unknown>\n#15 0x558e1a40d651 <unknown>\n#16 0x558e1a3f8b05 <unknown>\n#17 0x558e1a40ea68 <unknown>\n#18 0x558e1a3ed05f <unknown>\n#19 0x558e1a429818 <unknown>\n#20 0x558e1a429998 <unknown>\n#21 0x558e1a444eed <unknown>\n#22 0x7fbe07ce6609 <unknown>",
+      "children" : [ {
+        "name" : "Проверка возможности совершить покупку единственного товара",
+        "uid" : "288e5ea708599f49",
+        "parentUid" : "d0f7a65af451b0b8184aa4d2b7d0c9d5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639933182709,
+          "stop" : 1639933185253,
+          "duration" : 2544
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d0f7a65af451b0b8184aa4d2b7d0c9d5"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 528). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x558e1a3c5ee3 <unknown>\n#1 0x558e19e93608 <unknown>\n#2 0x558e19ed1044 <unknown>\n#3 0x558e19eceaf4 <unknown>\n#4 0x558e19ecc2da <unknown>\n#5 0x558e19ecace2 <unknown>\n#6 0x558e19ebe7b8 <unknown>\n#7 0x558e19ee7272 <unknown>\n#8 0x558e19ebe063 <unknown>\n#9 0x558e19ee737e <unknown>\n#10 0x558e19efa3bc <unknown>\n#11 0x558e19ee7163 <unknown>\n#12 0x558e19ebcbfc <unknown>\n#13 0x558e19ebdc05 <unknown>\n#14 0x558e1a3f7baa <unknown>\n#15 0x558e1a40d651 <unknown>\n#16 0x558e1a3f8b05 <unknown>\n#17 0x558e1a40ea68 <unknown>\n#18 0x558e1a3ed05f <unknown>\n#19 0x558e1a429818 <unknown>\n#20 0x558e1a429998 <unknown>\n#21 0x558e1a444eed <unknown>\n#22 0x7fbe07ce6609 <unknown>",
+      "children" : [ {
+        "name" : "Проверка возможности совершить покупку нескольких товара",
+        "uid" : "a04782a5043298c5",
+        "parentUid" : "df80716a012c05f056d576e892525310",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639933185282,
+          "stop" : 1639933188701,
+          "duration" : 3419
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "df80716a012c05f056d576e892525310"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
