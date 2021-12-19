@@ -1,0 +1,276 @@
+{
+  "uid" : "f334f88846accb0f",
+  "name" : "Проверка очистки формы Корзины до совершения покупки",
+  "fullName" : "tests.Basket.test_deleting_products_from_basket#test_deleting_products_from_basket",
+  "historyId" : "bfb2a631159e0d61a0f93482a5663fd8",
+  "time" : {
+    "start" : 1639904759024,
+    "stop" : 1639904762234,
+    "duration" : 3210
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 122). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x55b12c790ee3 <unknown>\n#1 0x55b12c25e608 <unknown>\n#2 0x55b12c29c044 <unknown>\n#3 0x55b12c299af4 <unknown>\n#4 0x55b12c2972da <unknown>\n#5 0x55b12c295ce2 <unknown>\n#6 0x55b12c2897b8 <unknown>\n#7 0x55b12c2b2272 <unknown>\n#8 0x55b12c289063 <unknown>\n#9 0x55b12c2b237e <unknown>\n#10 0x55b12c2c53bc <unknown>\n#11 0x55b12c2b2163 <unknown>\n#12 0x55b12c287bfc <unknown>\n#13 0x55b12c288c05 <unknown>\n#14 0x55b12c7c2baa <unknown>\n#15 0x55b12c7d8651 <unknown>\n#16 0x55b12c7c3b05 <unknown>\n#17 0x55b12c7d9a68 <unknown>\n#18 0x55b12c7b805f <unknown>\n#19 0x55b12c7f4818 <unknown>\n#20 0x55b12c7f4998 <unknown>\n#21 0x55b12c80feed <unknown>\n#22 0x7f647ac3c609 <unknown>",
+  "statusTrace" : "app = <fixtures.application.Application object at 0x7f41df21a160>\n\n    @allure.epic(\"Продуктовый магазин\")\n    @allure.feature(\"Работа с Корзиной\")\n    @allure.title(\"Проверка очистки формы Корзины до совершения покупки\")\n    def test_deleting_products_from_basket(app):\n        with allure.step(\"Открыть страницу магазина\"):\n            app.main_page.open_page(\"\")\n        with allure.step(\"Проверить отображение продуктов\"):\n            app.main_page.viewing_products_list()\n        with allure.step(\"Набрать продуктов в корзину\"):\n            app.main_page.random_click_on_buying_several_products()\n        with allure.step(\"Открыть корзину\"):\n            app.main_page.click_basket_icon()\n            app.basket_form.basket_form_is_opened()\n        with allure.step(\"Проверить, что в корзине находятся товары\"):\n            assert app.basket_form.check_shopping_list() != \"Cart is Empty\"\n        with allure.step(\"Очистить корзину\"):\n>           app.basket_form.delete_all_products_from_basket()\n\ntests/Basket/test_deleting_products_from_basket.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/basket_form.py:32: in delete_all_products_from_basket\n    self.app.wd.find_element_by_xpath(\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py:81: in click\n    self._execute(Command.CLICK_ELEMENT)\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py:710: in _execute\n    return self._parent.execute(command, params)\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f41df1cb3a0>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element click intercepted\",\"message\":\"element click intercepted: Element ...\\\\n#20 0x55b12c7f4998 \\\\u003Cunknown>\\\\n#21 0x55b12c80feed \\\\u003Cunknown>\\\\n#22 0x7f647ac3c609 \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 122). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\nE         (Session info: headless chrome=96.0.4664.110)\nE       Stacktrace:\nE       #0 0x55b12c790ee3 <unknown>\nE       #1 0x55b12c25e608 <unknown>\nE       #2 0x55b12c29c044 <unknown>\nE       #3 0x55b12c299af4 <unknown>\nE       #4 0x55b12c2972da <unknown>\nE       #5 0x55b12c295ce2 <unknown>\nE       #6 0x55b12c2897b8 <unknown>\nE       #7 0x55b12c2b2272 <unknown>\nE       #8 0x55b12c289063 <unknown>\nE       #9 0x55b12c2b237e <unknown>\nE       #10 0x55b12c2c53bc <unknown>\nE       #11 0x55b12c2b2163 <unknown>\nE       #12 0x55b12c287bfc <unknown>\nE       #13 0x55b12c288c05 <unknown>\nE       #14 0x55b12c7c2baa <unknown>\nE       #15 0x55b12c7d8651 <unknown>\nE       #16 0x55b12c7c3b05 <unknown>\nE       #17 0x55b12c7d9a68 <unknown>\nE       #18 0x55b12c7b805f <unknown>\nE       #19 0x55b12c7f4818 <unknown>\nE       #20 0x55b12c7f4998 <unknown>\nE       #21 0x55b12c80feed <unknown>\nE       #22 0x7f647ac3c609 <unknown>\n\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py:247: ElementClickInterceptedException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "app",
+    "time" : {
+      "start" : 1639904753063,
+      "stop" : 1639904753913,
+      "duration" : 850
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1639904753038,
+      "stop" : 1639904753063,
+      "duration" : 25
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 122). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x55b12c790ee3 <unknown>\n#1 0x55b12c25e608 <unknown>\n#2 0x55b12c29c044 <unknown>\n#3 0x55b12c299af4 <unknown>\n#4 0x55b12c2972da <unknown>\n#5 0x55b12c295ce2 <unknown>\n#6 0x55b12c2897b8 <unknown>\n#7 0x55b12c2b2272 <unknown>\n#8 0x55b12c289063 <unknown>\n#9 0x55b12c2b237e <unknown>\n#10 0x55b12c2c53bc <unknown>\n#11 0x55b12c2b2163 <unknown>\n#12 0x55b12c287bfc <unknown>\n#13 0x55b12c288c05 <unknown>\n#14 0x55b12c7c2baa <unknown>\n#15 0x55b12c7d8651 <unknown>\n#16 0x55b12c7c3b05 <unknown>\n#17 0x55b12c7d9a68 <unknown>\n#18 0x55b12c7b805f <unknown>\n#19 0x55b12c7f4818 <unknown>\n#20 0x55b12c7f4998 <unknown>\n#21 0x55b12c80feed <unknown>\n#22 0x7f647ac3c609 <unknown>",
+    "statusTrace" : "app = <fixtures.application.Application object at 0x7f41df21a160>\n\n    @allure.epic(\"Продуктовый магазин\")\n    @allure.feature(\"Работа с Корзиной\")\n    @allure.title(\"Проверка очистки формы Корзины до совершения покупки\")\n    def test_deleting_products_from_basket(app):\n        with allure.step(\"Открыть страницу магазина\"):\n            app.main_page.open_page(\"\")\n        with allure.step(\"Проверить отображение продуктов\"):\n            app.main_page.viewing_products_list()\n        with allure.step(\"Набрать продуктов в корзину\"):\n            app.main_page.random_click_on_buying_several_products()\n        with allure.step(\"Открыть корзину\"):\n            app.main_page.click_basket_icon()\n            app.basket_form.basket_form_is_opened()\n        with allure.step(\"Проверить, что в корзине находятся товары\"):\n            assert app.basket_form.check_shopping_list() != \"Cart is Empty\"\n        with allure.step(\"Очистить корзину\"):\n>           app.basket_form.delete_all_products_from_basket()\n\ntests/Basket/test_deleting_products_from_basket.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/basket_form.py:32: in delete_all_products_from_basket\n    self.app.wd.find_element_by_xpath(\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py:81: in click\n    self._execute(Command.CLICK_ELEMENT)\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py:710: in _execute\n    return self._parent.execute(command, params)\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f41df1cb3a0>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element click intercepted\",\"message\":\"element click intercepted: Element ...\\\\n#20 0x55b12c7f4998 \\\\u003Cunknown>\\\\n#21 0x55b12c80feed \\\\u003Cunknown>\\\\n#22 0x7f647ac3c609 \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 122). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\nE         (Session info: headless chrome=96.0.4664.110)\nE       Stacktrace:\nE       #0 0x55b12c790ee3 <unknown>\nE       #1 0x55b12c25e608 <unknown>\nE       #2 0x55b12c29c044 <unknown>\nE       #3 0x55b12c299af4 <unknown>\nE       #4 0x55b12c2972da <unknown>\nE       #5 0x55b12c295ce2 <unknown>\nE       #6 0x55b12c2897b8 <unknown>\nE       #7 0x55b12c2b2272 <unknown>\nE       #8 0x55b12c289063 <unknown>\nE       #9 0x55b12c2b237e <unknown>\nE       #10 0x55b12c2c53bc <unknown>\nE       #11 0x55b12c2b2163 <unknown>\nE       #12 0x55b12c287bfc <unknown>\nE       #13 0x55b12c288c05 <unknown>\nE       #14 0x55b12c7c2baa <unknown>\nE       #15 0x55b12c7d8651 <unknown>\nE       #16 0x55b12c7c3b05 <unknown>\nE       #17 0x55b12c7d9a68 <unknown>\nE       #18 0x55b12c7b805f <unknown>\nE       #19 0x55b12c7f4818 <unknown>\nE       #20 0x55b12c7f4998 <unknown>\nE       #21 0x55b12c80feed <unknown>\nE       #22 0x7f647ac3c609 <unknown>\n\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py:247: ElementClickInterceptedException",
+    "steps" : [ {
+      "name" : "Открыть страницу магазина",
+      "time" : {
+        "start" : 1639904759024,
+        "stop" : 1639904759058,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить отображение продуктов",
+      "time" : {
+        "start" : 1639904759058,
+        "stop" : 1639904759227,
+        "duration" : 169
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Набрать продуктов в корзину",
+      "time" : {
+        "start" : 1639904759227,
+        "stop" : 1639904760095,
+        "duration" : 868
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Открыть корзину",
+      "time" : {
+        "start" : 1639904760095,
+        "stop" : 1639904760154,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что в корзине находятся товары",
+      "time" : {
+        "start" : 1639904760154,
+        "stop" : 1639904761174,
+        "duration" : 1020
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Очистить корзину",
+      "time" : {
+        "start" : 1639904761175,
+        "stop" : 1639904762233,
+        "duration" : 1058
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 122). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x55b12c790ee3 <unknown>\n#1 0x55b12c25e608 <unknown>\n#2 0x55b12c29c044 <unknown>\n#3 0x55b12c299af4 <unknown>\n#4 0x55b12c2972da <unknown>\n#5 0x55b12c295ce2 <unknown>\n#6 0x55b12c2897b8 <unknown>\n#7 0x55b12c2b2272 <unknown>\n#8 0x55b12c289063 <unknown>\n#9 0x55b12c2b237e <unknown>\n#10 0x55b12c2c53bc <unknown>\n#11 0x55b12c2b2163 <unknown>\n#12 0x55b12c287bfc <unknown>\n#13 0x55b12c288c05 <unknown>\n#14 0x55b12c7c2baa <unknown>\n#15 0x55b12c7d8651 <unknown>\n#16 0x55b12c7c3b05 <unknown>\n#17 0x55b12c7d9a68 <unknown>\n#18 0x55b12c7b805f <unknown>\n#19 0x55b12c7f4818 <unknown>\n#20 0x55b12c7f4998 <unknown>\n#21 0x55b12c80feed <unknown>\n#22 0x7f647ac3c609 <unknown>\n\n",
+      "statusTrace" : "  File \"/home/runner/work/Innopolis_final/Innopolis_final/tests/Basket/test_deleting_products_from_basket.py\", line 20, in test_deleting_products_from_basket\n    app.basket_form.delete_all_products_from_basket()\n  File \"/home/runner/work/Innopolis_final/Innopolis_final/pages/basket_form.py\", line 32, in delete_all_products_from_basket\n    self.app.wd.find_element_by_xpath(\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py\", line 81, in click\n    self._execute(Command.CLICK_ELEMENT)\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py\", line 710, in _execute\n    return self._parent.execute(command, params)\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py\", line 424, in execute\n    self.error_handler.check_response(response)\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py\", line 247, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "9ed244c9b8b6b342",
+      "name" : "log",
+      "source" : "9ed244c9b8b6b342.txt",
+      "type" : "text/plain",
+      "size" : 83
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "app::0",
+    "time" : {
+      "start" : 1639904768542,
+      "stop" : 1639904768599,
+      "duration" : 57
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Продуктовый магазин"
+  }, {
+    "name" : "feature",
+    "value" : "Работа с Корзиной"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.Basket"
+  }, {
+    "name" : "suite",
+    "value" : "test_deleting_products_from_basket"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-266"
+  }, {
+    "name" : "thread",
+    "value" : "2839-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.Basket.test_deleting_products_from_basket"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "2866c900b5313d20",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/31//#testresult/2866c900b5313d20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639765414956,
+          "stop" : 1639765414957,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "a4235320cdeaa0b8",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/30//#testresult/a4235320cdeaa0b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639765319059,
+          "stop" : 1639765319060,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "3d609c5fd9fe12d6",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/29//#testresult/3d609c5fd9fe12d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639765266115,
+          "stop" : 1639765266116,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "29a720bc52f6bbfa",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/28//#testresult/29a720bc52f6bbfa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639764934290,
+          "stop" : 1639764934291,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "e0904cbda0f97a38",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/27//#testresult/e0904cbda0f97a38",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639764332694,
+          "stop" : 1639764332694,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f334f88846accb0f.json",
+  "parameterValues" : [ ]
+}
