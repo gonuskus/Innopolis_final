@@ -1,6 +1,6 @@
 import logging
 
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from locators.main_page import MainPageLocator
@@ -15,30 +15,35 @@ class BasePage:
     def waiting_open_page(self):
         check_progress_line = self.find_element(MainPageLocator.PROGRESS_LINE)
         wait = WebDriverWait(self.app.wd, 10)
-        wait.until(EC.element_selection_state_to_be(check_progress_line, False))
+        wait.until(
+            expected_conditions.element_selection_state_to_be(
+                check_progress_line, False
+            )
+        )
 
     def find_element(self, locator):
         return WebDriverWait(self.app.wd, 10).until(
-            EC.presence_of_element_located(locator),
+            expected_conditions.presence_of_element_located(locator),
             message=f"Can't find element by locator {locator}",
         )
 
     def find_clickable_element(self, locator):
         return WebDriverWait(self.app.wd, 10).until(
-            EC.element_to_be_clickable(locator),
+            expected_conditions.element_to_be_clickable(locator),
             message=f"Element not clickable {locator}",
         )
 
-    def click_button(self, locator):
-        WebDriverWait(self.app.wd, 10).until(
-            EC.element_to_be_clickable(locator),
-        ).click()
+    # def click_button(self, locator):
+    #     WebDriverWait(self.app.wd, 10).until(
+    #         expected_conditions.element_to_be_clickable(locator),
+    #     ).click()
 
     def open_page(self, open_url):
         self.app.wd.get(self.app.base_url + open_url)
         logger.info(f"Open {self.app.base_url}{open_url}")
 
-    def click_element(self, element):
+    @staticmethod
+    def click_element(element):
         element.click()
 
     def make_screenshot(self):

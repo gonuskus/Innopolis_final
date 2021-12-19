@@ -1,6 +1,7 @@
 import logging
 import time
 
+from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webelement import WebElement
 
 from locators.basket_form import BasketFormLocator
@@ -44,7 +45,10 @@ class BasketForm(BasePage):
         return self.find_element(BasketFormLocator.BASKET_MSG)
 
     def click_buying_btn(self):
-        self.click_element(self.buying_button())
+        # self.click_element(self.buying_button())
+        # checkBox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button.red")))
+        button = self.find_clickable_element(BasketFormLocator.BUY_BTN)
+        ActionChains(self.app.wd).move_to_element(button).click(button).perform()
 
     def buying_button(self) -> WebElement:
         return self.find_clickable_element(BasketFormLocator.BUY_BTN)
