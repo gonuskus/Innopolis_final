@@ -40,3 +40,6 @@ class BasePage:
 
     def click_element(self, element):
         element.click()
+
+    def make_screenshot(self):
+        return self.app.wd.get_screenshot_as_png()

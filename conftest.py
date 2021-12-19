@@ -1,3 +1,4 @@
+import allure
 import pytest
 
 from fixtures.application import Application
@@ -23,3 +24,13 @@ def pytest_addoption(parser):
         default=True,
         help="launching browser without gui",
     ),
+
+
+@pytest.fixture(scope="function", autouse=True)
+def screenshot_after_test(app):
+    yield
+    allure.attach(
+        app.wd.get_screenshot_as_png(),
+        name="screenshot",
+        attachment_type=allure.attachment_type.PNG,
+    )
