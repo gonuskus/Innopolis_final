@@ -1,0 +1,71 @@
+[ {
+  "uid" : "f38b12e423fb4de2",
+  "name" : "Проверка возможности совершить покупку нескольких товаров",
+  "time" : {
+    "start" : 1639934277012,
+    "stop" : 1639934281096,
+    "duration" : 4084
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3893d9c2c6d0dfca",
+  "name" : "Проверка очистки формы Корзины после совершения покупки",
+  "time" : {
+    "start" : 1639934265687,
+    "stop" : 1639934270413,
+    "duration" : 4726
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "17c17524bb03fb76",
+  "name" : "Проверка стартового состояния Корзины",
+  "time" : {
+    "start" : 1639934264391,
+    "stop" : 1639934265684,
+    "duration" : 1293
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d190bbb2f42d1be",
+  "name" : "Проверка возможности совершить покупку единственного товара",
+  "time" : {
+    "start" : 1639934273648,
+    "stop" : 1639934276978,
+    "duration" : 3330
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b1df1e8927767ca6",
+  "name" : "Проверка поиска несуществующего продукта",
+  "time" : {
+    "start" : 1639934281129,
+    "stop" : 1639934281447,
+    "duration" : 318
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb169283a0ba18b1",
+  "name" : "Проверка поиска продуктов на сайте магазина",
+  "time" : {
+    "start" : 1639934281449,
+    "stop" : 1639934281801,
+    "duration" : 352
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7243d4e811f3c4ac",
+  "name" : "Проверка очистки формы Корзины до совершения покупки",
+  "time" : {
+    "start" : 1639934270473,
+    "stop" : 1639934273615,
+    "duration" : 3142
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
