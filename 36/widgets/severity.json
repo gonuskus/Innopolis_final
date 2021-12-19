@@ -1,0 +1,71 @@
+[ {
+  "uid" : "76166c2fe78470ee",
+  "name" : "Проверка поиска несуществующего продукта",
+  "time" : {
+    "start" : 1639937667247,
+    "stop" : 1639937667635,
+    "duration" : 388
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccbe88a088f70b2a",
+  "name" : "Проверка поиска продуктов на сайте магазина",
+  "time" : {
+    "start" : 1639937667741,
+    "stop" : 1639937668226,
+    "duration" : 485
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb698e12a2905e87",
+  "name" : "Проверка стартового состояния Корзины",
+  "time" : {
+    "start" : 1639937649159,
+    "stop" : 1639937650583,
+    "duration" : 1424
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ace8191975bd9726",
+  "name" : "Проверка очистки формы Корзины после совершения покупки",
+  "time" : {
+    "start" : 1639937650761,
+    "stop" : 1639937655255,
+    "duration" : 4494
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a151aca08004bf12",
+  "name" : "Проверка возможности совершить покупку единственного товара",
+  "time" : {
+    "start" : 1639937658987,
+    "stop" : 1639937662554,
+    "duration" : 3567
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ad97d37eebe229b",
+  "name" : "Проверка очистки формы Корзины до совершения покупки",
+  "time" : {
+    "start" : 1639937655405,
+    "stop" : 1639937658821,
+    "duration" : 3416
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd3bc63abeb8dd55",
+  "name" : "Проверка возможности совершить покупку нескольких товаров",
+  "time" : {
+    "start" : 1639937662673,
+    "stop" : 1639937667151,
+    "duration" : 4478
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
