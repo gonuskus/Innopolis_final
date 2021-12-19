@@ -1,0 +1,70 @@
+repos:
+
+  - repo: https://github.com/ambv/black
+    rev: 21.12b0
+    hooks:
+      - id: black
+        language_version: python3.10
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 4.0.1
+    hooks:
+      - id: flake8
+        additional_dependencies: [ flake8-typing-imports==1.7.0 ]
+
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v2.6.0
+    hooks:
+      - id: reorder-python-imports
+        args: [ --py3-plus ]
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.29.1
+    hooks:
+      - id: pyupgrade
+        args: [ --py36-plus ]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+
+      - id: trailing-whitespace
+        name: Trim Trailing Whitespace
+        description: This hook trims trailing whitespace.
+        entry: trailing-whitespace-fixer
+        language: python
+        types: [ text ]
+
+      - id: check-merge-conflict
+        name: Check for merge conflicts
+        description: Check for files that contain merge conflict strings.
+        entry: check-merge-conflict
+        language: python
+        types: [ text ]
+
+      - id: check-yaml
+        name: Check Yaml
+        description: This hook checks yaml files for parseable syntax.
+        entry: check-yaml
+        language: python
+        types: [ yaml ]
+
+      - id: debug-statements
+        name: Debug Statements (Python)
+        description: Check for debugger imports and py37+ `breakpoint()` calls in python source.
+        entry: debug-statement-hook
+        language: python
+        types: [ python ]
+
+      - id: end-of-file-fixer
+        name: Fix End of Files
+        description: Ensures that a file is either empty, or ends with one newline.
+        entry: end-of-file-fixer
+        language: python
+        types: [ text ]
+
+      - id: requirements-txt-fixer
+        name: Fix requirements.txt
+        description: Sorts entries in requirements.txt
+        entry: requirements-txt-fixer
+        language: python
+        files: requirements.*\.txt$
