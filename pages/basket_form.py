@@ -1,6 +1,8 @@
 import logging
 import time
 
+from selenium.webdriver.remote.webelement import WebElement
+
 from locators.basket_form import BasketFormLocator
 from pages.base_page import BasePage
 
@@ -22,7 +24,10 @@ class BasketForm(BasePage):
         return self.find_element(BasketFormLocator.TOTAL_PRICE).text
 
     def close_basket(self):
-        self.find_clickable_element(BasketFormLocator.CLOSE_BASKET).click()
+        self.click_element(self.close_basket_button())
+
+    def close_basket_button(self) -> WebElement:
+        return self.find_clickable_element(BasketFormLocator.CLOSE_BASKET)
 
     def delete_all_products_from_basket(self):
         basket_list = self.app.wd.find_elements_by_css_selector(
