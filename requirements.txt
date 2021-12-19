@@ -1,9 +1,7 @@
 allure-pytest
 faker
-flake8
 pre-commit
 pytest
 requests
 selenium
-urllib3
 webdriver-manager==3.5.2

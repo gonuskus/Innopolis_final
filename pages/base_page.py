@@ -33,11 +33,6 @@ class BasePage:
             message=f"Element not clickable {locator}",
         )
 
-    # def click_button(self, locator):
-    #     WebDriverWait(self.app.wd, 10).until(
-    #         expected_conditions.element_to_be_clickable(locator),
-    #     ).click()
-
     def open_page(self, open_url):
         self.app.wd.get(self.app.base_url + open_url)
         logger.info(f"Open {self.app.base_url}{open_url}")

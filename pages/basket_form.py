@@ -45,9 +45,7 @@ class BasketForm(BasePage):
 
     def click_buying_btn(self):
         # self.click_element(self.buying_button())
-        # checkBox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button.red")))
         button = self.find_clickable_element(BasketFormLocator.BUY_BTN)
-        # ActionChains(self.app.wd).move_to_element(button).click(button).perform()
         self.app.wd.execute_script("arguments[0].click();", button)
 
     def buying_button(self) -> WebElement:

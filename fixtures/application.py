@@ -31,7 +31,6 @@ class Application:
         self.wd.quit()
 
     def create_allure_report(self, dir_name):
-        # os.chdir(dir_name)
         cmd = f"allure generate {dir_name} -o {dir_name}/latest --clean"
         code_exit = os.system(cmd)
         logger.info(f"create_allure_report result : {code_exit}")
