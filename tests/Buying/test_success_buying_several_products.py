@@ -3,7 +3,7 @@ import allure
 
 @allure.epic("Продуктовый магазин")
 @allure.feature("Покупка продуктов")
-@allure.title("Проверка возможности совершить покупку нескольких товара")
+@allure.title("Проверка возможности совершить покупку нескольких товаров")
 def test_success_buying_several_products(app):
     with allure.step("Открыть страницу магазина"):
         app.main_page.open_page("")
