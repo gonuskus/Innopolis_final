@@ -28,10 +28,8 @@ class BasketForm(BasePage):
         basket_list = self.app.wd.find_elements_by_css_selector(
             "span.secondary-content",
         )
-        for i in range(0, len(basket_list)):
-            self.app.wd.find_element_by_xpath(
-                f"/html/body/div/div/main/ui/li[{1 + 1}]/span/i",
-            ).click()
+        for i in range(len(basket_list)):
+            self.find_element(BasketFormLocator.DELETE_PRODUCT_FROM_BASKET).click()
 
     def check_success_buying_msg(self):
         time.sleep(1)

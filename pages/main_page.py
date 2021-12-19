@@ -25,12 +25,11 @@ class MainPage(BasePage):
     def _search_button(self):
         return self.find_element(MainPageLocator.SEARCH_BTN)
 
-    def searching(self, name_product):  # , submit=True
+    def searching(self, name_product):
         self._search_input().send_keys(name_product)
-        # self.click_button(MainPageLocator.SEARCH_BTN)
         self.click_element(self.submit_button())
 
-    def searching_random_product(self, name_product):
+    def searching_random_product(self):
         products = self.app.wd.find_elements_by_class_name("card-title")
         num_product_card = random.randrange(1, len(products))
         name_product = self.app.wd.find_element_by_css_selector(
