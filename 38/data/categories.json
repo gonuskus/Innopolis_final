@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//div[contains(text(),\"Pay done!\")]')\nStacktrace:\n#0 0x5644ac79cee3 <unknown>\n#1 0x5644ac26a608 <unknown>\n#2 0x5644ac2a0aa1 <unknown>\n#3 0x5644ac2a0c61 <unknown>\n#4 0x5644ac2d3714 <unknown>\n#5 0x5644ac2be29d <unknown>\n#6 0x5644ac2d13bc <unknown>\n#7 0x5644ac2be163 <unknown>\n#8 0x5644ac293bfc <unknown>\n#9 0x5644ac294c05 <unknown>\n#10 0x5644ac7cebaa <unknown>\n#11 0x5644ac7e4651 <unknown>\n#12 0x5644ac7cfb05 <unknown>\n#13 0x5644ac7e5a68 <unknown>\n#14 0x5644ac7c405f <unknown>\n#15 0x5644ac800818 <unknown>\n#16 0x5644ac800998 <unknown>\n#17 0x5644ac81beed <unknown>\n#18 0x7ff0930b4609 <unknown>",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины после совершения покупки",
+        "uid" : "3f1d5c493750dfb",
+        "parentUid" : "530b7986f9d3f47cd917c9b9798cbd44",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639939332222,
+          "stop" : 1639939346916,
+          "duration" : 14694
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка возможности совершить покупку единственного товара",
+        "uid" : "c055083f1ddd70ec",
+        "parentUid" : "530b7986f9d3f47cd917c9b9798cbd44",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639939350567,
+          "stop" : 1639939363992,
+          "duration" : 13425
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка возможности совершить покупку нескольких товаров",
+        "uid" : "43db04f24ce03f7e",
+        "parentUid" : "530b7986f9d3f47cd917c9b9798cbd44",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639939364083,
+          "stop" : 1639939378436,
+          "duration" : 14353
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "530b7986f9d3f47cd917c9b9798cbd44"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
