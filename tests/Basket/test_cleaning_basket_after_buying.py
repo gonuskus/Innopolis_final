@@ -13,7 +13,6 @@ def test_cleaning_basket_after_buying(app):
         app.main_page.click_basket_icon()
         app.basket_form.basket_form_is_opened()
     with allure.step("Проверить, что корзина пустая"):
-        # assert app.basket_form.check_shopping_list() == "Cart is Empty"
         assert app.basket_form.check_shopping_list() == "Cart is Empty"
     with allure.step("Проверить, стоимость товаров в корзине - должно быть 0 руб"):
         assert app.basket_form.get_total_price() == "Total price: 0 ₽"
