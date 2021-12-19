@@ -44,5 +44,7 @@ class BasketForm(BasePage):
         return self.find_element(BasketFormLocator.BASKET_MSG)
 
     def click_buying_btn(self):
-        time.sleep(1)
-        self.find_clickable_element(BasketFormLocator.BUY_BTN).click()
+        self.click_element(self.buying_button())
+
+    def buying_button(self) -> WebElement:
+        return self.find_clickable_element(BasketFormLocator.BUY_BTN)
