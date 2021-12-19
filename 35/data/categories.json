@@ -1,0 +1,73 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 371). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x559ac1408ee3 <unknown>\n#1 0x559ac0ed6608 <unknown>\n#2 0x559ac0f14044 <unknown>\n#3 0x559ac0f11af4 <unknown>\n#4 0x559ac0f0f2da <unknown>\n#5 0x559ac0f0dce2 <unknown>\n#6 0x559ac0f017b8 <unknown>\n#7 0x559ac0f2a272 <unknown>\n#8 0x559ac0f01063 <unknown>\n#9 0x559ac0f2a37e <unknown>\n#10 0x559ac0f3d3bc <unknown>\n#11 0x559ac0f2a163 <unknown>\n#12 0x559ac0effbfc <unknown>\n#13 0x559ac0f00c05 <unknown>\n#14 0x559ac143abaa <unknown>\n#15 0x559ac1450651 <unknown>\n#16 0x559ac143bb05 <unknown>\n#17 0x559ac1451a68 <unknown>\n#18 0x559ac143005f <unknown>\n#19 0x559ac146c818 <unknown>\n#20 0x559ac146c998 <unknown>\n#21 0x559ac1487eed <unknown>\n#22 0x7f8bf6c7a609 <unknown>",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины после совершения покупки",
+        "uid" : "bb6c951ec1472897",
+        "parentUid" : "a942fb37a130b07e6ec6691adc0f67af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639936994717,
+          "stop" : 1639936999110,
+          "duration" : 4393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка возможности совершить покупку единственного товара",
+        "uid" : "6ae0bb23ad704103",
+        "parentUid" : "a942fb37a130b07e6ec6691adc0f67af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639937002241,
+          "stop" : 1639937005843,
+          "duration" : 3602
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a942fb37a130b07e6ec6691adc0f67af"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 100). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x559ac1408ee3 <unknown>\n#1 0x559ac0ed6608 <unknown>\n#2 0x559ac0f14044 <unknown>\n#3 0x559ac0f11af4 <unknown>\n#4 0x559ac0f0f2da <unknown>\n#5 0x559ac0f0dce2 <unknown>\n#6 0x559ac0f017b8 <unknown>\n#7 0x559ac0f2a272 <unknown>\n#8 0x559ac0f01063 <unknown>\n#9 0x559ac0f2a37e <unknown>\n#10 0x559ac0f3d3bc <unknown>\n#11 0x559ac0f2a163 <unknown>\n#12 0x559ac0effbfc <unknown>\n#13 0x559ac0f00c05 <unknown>\n#14 0x559ac143abaa <unknown>\n#15 0x559ac1450651 <unknown>\n#16 0x559ac143bb05 <unknown>\n#17 0x559ac1451a68 <unknown>\n#18 0x559ac143005f <unknown>\n#19 0x559ac146c818 <unknown>\n#20 0x559ac146c998 <unknown>\n#21 0x559ac1487eed <unknown>\n#22 0x7f8bf6c7a609 <unknown>",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины до совершения покупки",
+        "uid" : "be3ba7f8ba07ac57",
+        "parentUid" : "f7ce15baecca516b5a9ca52c750e4b20",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639936999252,
+          "stop" : 1639937002154,
+          "duration" : 2902
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f7ce15baecca516b5a9ca52c750e4b20"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 528). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x559ac1408ee3 <unknown>\n#1 0x559ac0ed6608 <unknown>\n#2 0x559ac0f14044 <unknown>\n#3 0x559ac0f11af4 <unknown>\n#4 0x559ac0f0f2da <unknown>\n#5 0x559ac0f0dce2 <unknown>\n#6 0x559ac0f017b8 <unknown>\n#7 0x559ac0f2a272 <unknown>\n#8 0x559ac0f01063 <unknown>\n#9 0x559ac0f2a37e <unknown>\n#10 0x559ac0f3d3bc <unknown>\n#11 0x559ac0f2a163 <unknown>\n#12 0x559ac0effbfc <unknown>\n#13 0x559ac0f00c05 <unknown>\n#14 0x559ac143abaa <unknown>\n#15 0x559ac1450651 <unknown>\n#16 0x559ac143bb05 <unknown>\n#17 0x559ac1451a68 <unknown>\n#18 0x559ac143005f <unknown>\n#19 0x559ac146c818 <unknown>\n#20 0x559ac146c998 <unknown>\n#21 0x559ac1487eed <unknown>\n#22 0x7f8bf6c7a609 <unknown>",
+      "children" : [ {
+        "name" : "Проверка возможности совершить покупку нескольких товаров",
+        "uid" : "27b84c842441c3a",
+        "parentUid" : "88ac397d5fecbd88540d4ad43752ef01",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639937005952,
+          "stop" : 1639937010259,
+          "duration" : 4307
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "88ac397d5fecbd88540d4ad43752ef01"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
