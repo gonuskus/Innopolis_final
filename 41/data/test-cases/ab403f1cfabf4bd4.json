@@ -1,0 +1,450 @@
+{
+  "uid" : "ab403f1cfabf4bd4",
+  "name" : "Проверка очистки формы Корзины после совершения покупки",
+  "fullName" : "tests.Basket.test_cleaning_basket_after_buying#test_cleaning_basket_after_buying",
+  "historyId" : "7c789ac4eb92f71557850da3a9ac00c2",
+  "time" : {
+    "start" : 1639977917724,
+    "stop" : 1639977922483,
+    "duration" : 4759
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1639977909537,
+      "stop" : 1639977909604,
+      "duration" : 67
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1639977909604,
+      "stop" : 1639977915206,
+      "duration" : 5602
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "screenshot_after_test",
+    "time" : {
+      "start" : 1639977917724,
+      "stop" : 1639977917724,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть страницу магазина",
+      "time" : {
+        "start" : 1639977917725,
+        "stop" : 1639977917769,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Нажать на иконку 'Корзина' и проверить что отобразилась форма Корзины",
+      "time" : {
+        "start" : 1639977917769,
+        "stop" : 1639977917836,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что корзина пустая",
+      "time" : {
+        "start" : 1639977917836,
+        "stop" : 1639977918854,
+        "duration" : 1018
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, стоимость товаров в корзине - должно быть 0 руб",
+      "time" : {
+        "start" : 1639977918855,
+        "stop" : 1639977918869,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Закрыть форму Корзина",
+      "time" : {
+        "start" : 1639977918869,
+        "stop" : 1639977918915,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Набрать продуктов в корзину",
+      "time" : {
+        "start" : 1639977918915,
+        "stop" : 1639977919283,
+        "duration" : 368
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Открыть корзину",
+      "time" : {
+        "start" : 1639977919283,
+        "stop" : 1639977919330,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что в корзине находятся товары",
+      "time" : {
+        "start" : 1639977919330,
+        "stop" : 1639977920350,
+        "duration" : 1020
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Нажать кнопку покупки",
+      "time" : {
+        "start" : 1639977920350,
+        "stop" : 1639977920381,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что появилось сообщение об успешности покупки",
+      "time" : {
+        "start" : 1639977920381,
+        "stop" : 1639977921404,
+        "duration" : 1023
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что корзина очистилась",
+      "time" : {
+        "start" : 1639977921404,
+        "stop" : 1639977922423,
+        "duration" : 1019
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, стоимость товаров в корзине сбросилась - должно быть 0 руб",
+      "time" : {
+        "start" : 1639977922423,
+        "stop" : 1639977922438,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Закрыть форму Корзина",
+      "time" : {
+        "start" : 1639977922438,
+        "stop" : 1639977922482,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "1085f8ddcb4408ed",
+      "name" : "log",
+      "source" : "1085f8ddcb4408ed.txt",
+      "type" : "text/plain",
+      "size" : 83
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 13,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "app::0",
+    "time" : {
+      "start" : 1639977932882,
+      "stop" : 1639977932941,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "screenshot_after_test::0",
+    "time" : {
+      "start" : 1639977922483,
+      "stop" : 1639977922569,
+      "duration" : 86
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5ad90756fdd93d33",
+      "name" : "screenshot",
+      "source" : "5ad90756fdd93d33.png",
+      "type" : "image/png",
+      "size" : 116739
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Продуктовый магазин"
+  }, {
+    "name" : "feature",
+    "value" : "Работа с Корзиной"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.Basket"
+  }, {
+    "name" : "suite",
+    "value" : "test_cleaning_basket_after_buying"
+  }, {
+    "name" : "host",
+    "value" : "fv-az127-10"
+  }, {
+    "name" : "thread",
+    "value" : "2719-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.Basket.test_cleaning_basket_after_buying"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "6ff2c9cf2936708f",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/40//#testresult/6ff2c9cf2936708f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639940110946,
+          "stop" : 1639940115630,
+          "duration" : 4684
+        }
+      }, {
+        "uid" : "7d797cf1645cf4c0",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/39//#testresult/7d797cf1645cf4c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639939738635,
+          "stop" : 1639939743151,
+          "duration" : 4516
+        }
+      }, {
+        "uid" : "3f1d5c493750dfb",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/38//#testresult/3f1d5c493750dfb",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//div[contains(text(),\"Pay done!\")]')\nStacktrace:\n#0 0x5644ac79cee3 <unknown>\n#1 0x5644ac26a608 <unknown>\n#2 0x5644ac2a0aa1 <unknown>\n#3 0x5644ac2a0c61 <unknown>\n#4 0x5644ac2d3714 <unknown>\n#5 0x5644ac2be29d <unknown>\n#6 0x5644ac2d13bc <unknown>\n#7 0x5644ac2be163 <unknown>\n#8 0x5644ac293bfc <unknown>\n#9 0x5644ac294c05 <unknown>\n#10 0x5644ac7cebaa <unknown>\n#11 0x5644ac7e4651 <unknown>\n#12 0x5644ac7cfb05 <unknown>\n#13 0x5644ac7e5a68 <unknown>\n#14 0x5644ac7c405f <unknown>\n#15 0x5644ac800818 <unknown>\n#16 0x5644ac800998 <unknown>\n#17 0x5644ac81beed <unknown>\n#18 0x7ff0930b4609 <unknown>",
+        "time" : {
+          "start" : 1639939332222,
+          "stop" : 1639939346916,
+          "duration" : 14694
+        }
+      }, {
+        "uid" : "dd378816f0a21441",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/37//#testresult/dd378816f0a21441",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 371). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x5632e0593ee3 <unknown>\n#1 0x5632e0061608 <unknown>\n#2 0x5632e009f044 <unknown>\n#3 0x5632e009caf4 <unknown>\n#4 0x5632e009a2da <unknown>\n#5 0x5632e0098ce2 <unknown>\n#6 0x5632e008c7b8 <unknown>\n#7 0x5632e00b5272 <unknown>\n#8 0x5632e008c063 <unknown>\n#9 0x5632e00b537e <unknown>\n#10 0x5632e00c83bc <unknown>\n#11 0x5632e00b5163 <unknown>\n#12 0x5632e008abfc <unknown>\n#13 0x5632e008bc05 <unknown>\n#14 0x5632e05c5baa <unknown>\n#15 0x5632e05db651 <unknown>\n#16 0x5632e05c6b05 <unknown>\n#17 0x5632e05dca68 <unknown>\n#18 0x5632e05bb05f <unknown>\n#19 0x5632e05f7818 <unknown>\n#20 0x5632e05f7998 <unknown>\n#21 0x5632e0612eed <unknown>\n#22 0x7f19499eb609 <unknown>",
+        "time" : {
+          "start" : 1639938330333,
+          "stop" : 1639938333696,
+          "duration" : 3363
+        }
+      }, {
+        "uid" : "ace8191975bd9726",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/36//#testresult/ace8191975bd9726",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 371). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x55e226d18ee3 <unknown>\n#1 0x55e2267e6608 <unknown>\n#2 0x55e226824044 <unknown>\n#3 0x55e226821af4 <unknown>\n#4 0x55e22681f2da <unknown>\n#5 0x55e22681dce2 <unknown>\n#6 0x55e2268117b8 <unknown>\n#7 0x55e22683a272 <unknown>\n#8 0x55e226811063 <unknown>\n#9 0x55e22683a37e <unknown>\n#10 0x55e22684d3bc <unknown>\n#11 0x55e22683a163 <unknown>\n#12 0x55e22680fbfc <unknown>\n#13 0x55e226810c05 <unknown>\n#14 0x55e226d4abaa <unknown>\n#15 0x55e226d60651 <unknown>\n#16 0x55e226d4bb05 <unknown>\n#17 0x55e226d61a68 <unknown>\n#18 0x55e226d4005f <unknown>\n#19 0x55e226d7c818 <unknown>\n#20 0x55e226d7c998 <unknown>\n#21 0x55e226d97eed <unknown>\n#22 0x7fe41aaf4609 <unknown>",
+        "time" : {
+          "start" : 1639937650761,
+          "stop" : 1639937655255,
+          "duration" : 4494
+        }
+      }, {
+        "uid" : "bb6c951ec1472897",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/35//#testresult/bb6c951ec1472897",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 371). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x559ac1408ee3 <unknown>\n#1 0x559ac0ed6608 <unknown>\n#2 0x559ac0f14044 <unknown>\n#3 0x559ac0f11af4 <unknown>\n#4 0x559ac0f0f2da <unknown>\n#5 0x559ac0f0dce2 <unknown>\n#6 0x559ac0f017b8 <unknown>\n#7 0x559ac0f2a272 <unknown>\n#8 0x559ac0f01063 <unknown>\n#9 0x559ac0f2a37e <unknown>\n#10 0x559ac0f3d3bc <unknown>\n#11 0x559ac0f2a163 <unknown>\n#12 0x559ac0effbfc <unknown>\n#13 0x559ac0f00c05 <unknown>\n#14 0x559ac143abaa <unknown>\n#15 0x559ac1450651 <unknown>\n#16 0x559ac143bb05 <unknown>\n#17 0x559ac1451a68 <unknown>\n#18 0x559ac143005f <unknown>\n#19 0x559ac146c818 <unknown>\n#20 0x559ac146c998 <unknown>\n#21 0x559ac1487eed <unknown>\n#22 0x7f8bf6c7a609 <unknown>",
+        "time" : {
+          "start" : 1639936994717,
+          "stop" : 1639936999110,
+          "duration" : 4393
+        }
+      }, {
+        "uid" : "3893d9c2c6d0dfca",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/34//#testresult/3893d9c2c6d0dfca",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 371). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x561581866ee3 <unknown>\n#1 0x561581334608 <unknown>\n#2 0x561581372044 <unknown>\n#3 0x56158136faf4 <unknown>\n#4 0x56158136d2da <unknown>\n#5 0x56158136bce2 <unknown>\n#6 0x56158135f7b8 <unknown>\n#7 0x561581388272 <unknown>\n#8 0x56158135f063 <unknown>\n#9 0x56158138837e <unknown>\n#10 0x56158139b3bc <unknown>\n#11 0x561581388163 <unknown>\n#12 0x56158135dbfc <unknown>\n#13 0x56158135ec05 <unknown>\n#14 0x561581898baa <unknown>\n#15 0x5615818ae651 <unknown>\n#16 0x561581899b05 <unknown>\n#17 0x5615818afa68 <unknown>\n#18 0x56158188e05f <unknown>\n#19 0x5615818ca818 <unknown>\n#20 0x5615818ca998 <unknown>\n#21 0x5615818e5eed <unknown>\n#22 0x7f94cef54609 <unknown>",
+        "time" : {
+          "start" : 1639934265687,
+          "stop" : 1639934270413,
+          "duration" : 4726
+        }
+      }, {
+        "uid" : "617593345611aacb",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/33//#testresult/617593345611aacb",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f4d42c6cb20>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f4d42c6cb20>> = <pages.basket_form.BasketForm object at 0x7f4d42c6cb20>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7f4d42c6cb20> = <fixtures.application.Application object at 0x7f4d42cb8100>.basket_form",
+        "time" : {
+          "start" : 1639933177228,
+          "stop" : 1639933179475,
+          "duration" : 2247
+        }
+      }, {
+        "uid" : "17a3dc25b9728a1b",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/32//#testresult/17a3dc25b9728a1b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"btn red btn-small\">...</button> is not clickable at point (112, 371). Other element would receive the click: <div id=\"toast-container\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x55b12c790ee3 <unknown>\n#1 0x55b12c25e608 <unknown>\n#2 0x55b12c29c044 <unknown>\n#3 0x55b12c299af4 <unknown>\n#4 0x55b12c2972da <unknown>\n#5 0x55b12c295ce2 <unknown>\n#6 0x55b12c2897b8 <unknown>\n#7 0x55b12c2b2272 <unknown>\n#8 0x55b12c289063 <unknown>\n#9 0x55b12c2b237e <unknown>\n#10 0x55b12c2c53bc <unknown>\n#11 0x55b12c2b2163 <unknown>\n#12 0x55b12c287bfc <unknown>\n#13 0x55b12c288c05 <unknown>\n#14 0x55b12c7c2baa <unknown>\n#15 0x55b12c7d8651 <unknown>\n#16 0x55b12c7c3b05 <unknown>\n#17 0x55b12c7d9a68 <unknown>\n#18 0x55b12c7b805f <unknown>\n#19 0x55b12c7f4818 <unknown>\n#20 0x55b12c7f4998 <unknown>\n#21 0x55b12c80feed <unknown>\n#22 0x7f647ac3c609 <unknown>",
+        "time" : {
+          "start" : 1639904755321,
+          "stop" : 1639904758961,
+          "duration" : 3640
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ab403f1cfabf4bd4.json",
+  "parameterValues" : [ ]
+}
