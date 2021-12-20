@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f6e6e548850>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f6e6e548850>> = <pages.basket_form.BasketForm object at 0x7f6e6e548850>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7f6e6e548850> = <fixtures.application.Application object at 0x7f6e6e548700>.basket_form",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины после совершения покупки",
+        "uid" : "e799cf22842aed71",
+        "parentUid" : "07dc32651dff017e2cbdf35981439551",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639977954366,
+          "stop" : 1639977956615,
+          "duration" : 2249
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "07dc32651dff017e2cbdf35981439551"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 100). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x55add0ff2ee3 <unknown>\n#1 0x55add0ac0608 <unknown>\n#2 0x55add0afe044 <unknown>\n#3 0x55add0afbaf4 <unknown>\n#4 0x55add0af92da <unknown>\n#5 0x55add0af7ce2 <unknown>\n#6 0x55add0aeb7b8 <unknown>\n#7 0x55add0b14272 <unknown>\n#8 0x55add0aeb063 <unknown>\n#9 0x55add0b1437e <unknown>\n#10 0x55add0b273bc <unknown>\n#11 0x55add0b14163 <unknown>\n#12 0x55add0ae9bfc <unknown>\n#13 0x55add0aeac05 <unknown>\n#14 0x55add1024baa <unknown>\n#15 0x55add103a651 <unknown>\n#16 0x55add1025b05 <unknown>\n#17 0x55add103ba68 <unknown>\n#18 0x55add101a05f <unknown>\n#19 0x55add1056818 <unknown>\n#20 0x55add1056998 <unknown>\n#21 0x55add1071eed <unknown>\n#22 0x7f7def7f1609 <unknown>",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины до совершения покупки",
+        "uid" : "9db01698850540ff",
+        "parentUid" : "b0c547127b7cc1bfd1bc9d06f351d6b9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1639977956742,
+          "stop" : 1639977960161,
+          "duration" : 3419
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b0c547127b7cc1bfd1bc9d06f351d6b9"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
