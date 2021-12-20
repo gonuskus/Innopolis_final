@@ -31,10 +31,11 @@ class BasketForm(BasePage):
 
     def delete_all_products_from_basket(self):
         basket_list = self.app.wd.find_elements_by_css_selector(
-            "span.secondary-content",
+            "span.secondary-content"
         )
         for i in range(len(basket_list)):
             self.find_element(BasketFormLocator.DELETE_PRODUCT_FROM_BASKET).click()
+        logger.info("Вasket has been emptied")
 
     def check_success_buying_msg(self):
         time.sleep(1)

@@ -20,6 +20,7 @@ class BasePage:
                 check_progress_line, False
             )
         )
+        logger.info("Main page is loaded")
 
     def find_element(self, locator):
         return WebDriverWait(self.app.wd, 10).until(
@@ -42,4 +43,5 @@ class BasePage:
         element.click()
 
     def make_screenshot(self):
+        logger.info("Screenshot is taken")
         return self.app.wd.get_screenshot_as_png()

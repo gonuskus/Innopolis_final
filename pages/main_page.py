@@ -19,7 +19,6 @@ class MainPage(BasePage):
         return products
 
     def _search_input(self):
-        # time.sleep(0.5)
         return self.find_element(MainPageLocator.SEARCH_FIELD)
 
     def _search_button(self):
@@ -28,6 +27,7 @@ class MainPage(BasePage):
     def searching(self, name_product):
         self._search_input().send_keys(name_product)
         self.click_element(self.submit_button())
+        logger.info(f"{name_product} was found")
 
     def searching_random_product(self):
         products = self.app.wd.find_elements_by_class_name("card-title")
@@ -50,9 +50,7 @@ class MainPage(BasePage):
     def click_basket_icon(self):
         self.find_clickable_element(MainPageLocator.BASKET_ICON).click()
 
-    def click_buy_btn(
-        self,
-    ):
+    def click_buy_btn(self):
         self.find_clickable_element(MainPageLocator.BASKET_ICON).click()
 
     def random_click_on_buying_several_products(self):
@@ -62,6 +60,9 @@ class MainPage(BasePage):
                 self.app.wd.find_element_by_css_selector(
                     f"div.card:nth-child({_ + 1}) > div:nth-child(3) > button:nth-child(1)",
                 ).click()
+        logger.info(
+            "Several products with different quantities have been added to the cart"
+        )
 
     def random_click_on_buying_one_product(self):
         products = self.app.wd.find_elements_by_class_name("card-title")
@@ -70,3 +71,6 @@ class MainPage(BasePage):
             self.app.wd.find_element_by_css_selector(
                 f"div.card:nth-child({num_product_card}) > div:nth-child(3) > button:nth-child(1)",
             ).click()
+        logger.info(
+            "Random product with different quantities have been added to the cart"
+        )
