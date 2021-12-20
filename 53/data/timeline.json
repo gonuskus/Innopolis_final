@@ -1,0 +1,104 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az82-291",
+    "children" : [ {
+      "name" : "2764-MainThread",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины после совершения покупки",
+        "uid" : "c4bb1e14b01a8f31",
+        "parentUid" : "558942d98dc9a98630e90945b991cefa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984993229,
+          "stop" : 1639985000831,
+          "duration" : 7602
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка возможности совершить покупку единственного товара",
+        "uid" : "2afbd7bd3d0c121e",
+        "parentUid" : "558942d98dc9a98630e90945b991cefa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639985006590,
+          "stop" : 1639985010070,
+          "duration" : 3480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка стартового состояния Корзины",
+        "uid" : "5534f908b3cb4088",
+        "parentUid" : "558942d98dc9a98630e90945b991cefa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984989253,
+          "stop" : 1639984993032,
+          "duration" : 3779
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка поиска продуктов на сайте магазина",
+        "uid" : "4a2dadf374e57a57",
+        "parentUid" : "558942d98dc9a98630e90945b991cefa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639985015182,
+          "stop" : 1639985015737,
+          "duration" : 555
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка очистки формы Корзины до совершения покупки",
+        "uid" : "119c56b3ec7bbf8a",
+        "parentUid" : "558942d98dc9a98630e90945b991cefa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639985001016,
+          "stop" : 1639985006411,
+          "duration" : 5395
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка возможности совершить покупку нескольких товаров",
+        "uid" : "6f40b608dc87a2d6",
+        "parentUid" : "558942d98dc9a98630e90945b991cefa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639985010171,
+          "stop" : 1639985014538,
+          "duration" : 4367
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка поиска несуществующего продукта",
+        "uid" : "b0c41a2c484b7503",
+        "parentUid" : "558942d98dc9a98630e90945b991cefa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639985014719,
+          "stop" : 1639985015103,
+          "duration" : 384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "558942d98dc9a98630e90945b991cefa"
+    } ],
+    "uid" : "7adf483c40d290d15e3796c56e9ae0a0"
+  } ],
+  "name" : "timeline"
+}
