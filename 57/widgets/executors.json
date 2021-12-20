@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://gonuskus.github.io/Innopolis_final",
+  "buildOrder" : 57,
+  "buildName" : "GitHub Actions Run #1602913578",
+  "buildUrl" : "https://github.com/gonuskus/Innopolis_final/actions/runs/1602913578",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/57/"
+} ]

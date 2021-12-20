@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fa827674ac0>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fa827674ac0>> = <pages.basket_form.BasketForm object at 0x7fa827674ac0>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7fa827674ac0> = <fixtures.application.Application object at 0x7fa8276ccc70>.basket_form",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины после совершения покупки",
+        "uid" : "5a133e3709fe3c30",
+        "parentUid" : "a2e5d5b649379cb04404a2316aeb6dfc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1640016609451,
+          "stop" : 1640016613685,
+          "duration" : 4234
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a2e5d5b649379cb04404a2316aeb6dfc"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
