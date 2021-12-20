@@ -3,6 +3,13 @@
   "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46/",
   "reportName" : "Allure Report with history",
   "data" : {
+    "duration" : 18547
+  }
+}, {
+  "buildOrder" : 46,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46/",
+  "reportName" : "Allure Report with history",
+  "data" : {
     "duration" : 14292
   }
 }, {
@@ -130,12 +137,5 @@
   "reportName" : "Allure Report with history",
   "data" : {
     "duration" : 10
-  }
-}, {
-  "buildOrder" : 28,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/28/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 13
   }
 } ]

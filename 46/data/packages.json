@@ -8,13 +8,13 @@
         "name" : "test_checking_basket_form",
         "children" : [ {
           "name" : "Проверка стартового состояния Корзины",
-          "uid" : "33d1f3a4ef81e132",
+          "uid" : "75a90377387a153b",
           "parentUid" : "0891c916d60e17101d7ebb02786cb4c7",
           "status" : "passed",
           "time" : {
-            "start" : 1639981832734,
-            "stop" : 1639981834183,
-            "duration" : 1449
+            "start" : 1639982264528,
+            "stop" : 1639982267137,
+            "duration" : 2609
           },
           "flaky" : false,
           "newFailed" : false,
@@ -25,16 +25,16 @@
         "name" : "test_cleaning_basket_after_buying",
         "children" : [ {
           "name" : "Проверка очистки формы Корзины после совершения покупки",
-          "uid" : "a08f23fcff010909",
+          "uid" : "c696e1d2c2ea48a5",
           "parentUid" : "481b162244e7248006b19820f23dc354",
-          "status" : "failed",
+          "status" : "passed",
           "time" : {
-            "start" : 1639981834391,
-            "stop" : 1639981836712,
-            "duration" : 2321
+            "start" : 1639982267326,
+            "stop" : 1639982271973,
+            "duration" : 4647
           },
-          "flaky" : true,
-          "newFailed" : true,
+          "flaky" : false,
+          "newFailed" : false,
           "parameters" : [ ]
         } ],
         "uid" : "481b162244e7248006b19820f23dc354"
@@ -42,13 +42,13 @@
         "name" : "test_deleting_products_from_basket",
         "children" : [ {
           "name" : "Проверка очистки формы Корзины до совершения покупки",
-          "uid" : "414e7fe2bab3d997",
+          "uid" : "7d6d5fff27ddd6f1",
           "parentUid" : "b3966efe2dae3542e4d4a3bbb6577217",
           "status" : "passed",
           "time" : {
-            "start" : 1639981836863,
-            "stop" : 1639981840104,
-            "duration" : 3241
+            "start" : 1639982272071,
+            "stop" : 1639982275485,
+            "duration" : 3414
           },
           "flaky" : false,
           "newFailed" : false,
@@ -63,13 +63,13 @@
         "name" : "test_success_buying_one_product",
         "children" : [ {
           "name" : "Проверка возможности совершить покупку единственного товара",
-          "uid" : "377ca96120fdc77b",
+          "uid" : "33b5f6c94716788c",
           "parentUid" : "22c9d23b8a7d0d1c1a2581be82dd4e21",
           "status" : "passed",
           "time" : {
-            "start" : 1639981840299,
-            "stop" : 1639981842712,
-            "duration" : 2413
+            "start" : 1639982275687,
+            "stop" : 1639982278301,
+            "duration" : 2614
           },
           "flaky" : false,
           "newFailed" : false,
@@ -80,13 +80,13 @@
         "name" : "test_success_buying_several_products",
         "children" : [ {
           "name" : "Проверка возможности совершить покупку нескольких товаров",
-          "uid" : "c8eba2b197d18ae8",
+          "uid" : "630ee324fd1d9446",
           "parentUid" : "3fc92ee8be5c41ee6eb6b98ea78f0515",
           "status" : "passed",
           "time" : {
-            "start" : 1639981842820,
-            "stop" : 1639981846118,
-            "duration" : 3298
+            "start" : 1639982278408,
+            "stop" : 1639982282137,
+            "duration" : 3729
           },
           "flaky" : false,
           "newFailed" : false,
@@ -101,13 +101,13 @@
         "name" : "test_failed_searching",
         "children" : [ {
           "name" : "Проверка поиска несуществующего продукта",
-          "uid" : "c01eb8d6676a0947",
+          "uid" : "3f5d33e73995234c",
           "parentUid" : "4339f5f6e6954416307504abc8ec357f",
           "status" : "passed",
           "time" : {
-            "start" : 1639981846213,
-            "stop" : 1639981846551,
-            "duration" : 338
+            "start" : 1639982282236,
+            "stop" : 1639982282606,
+            "duration" : 370
           },
           "flaky" : false,
           "newFailed" : false,
@@ -118,13 +118,13 @@
         "name" : "test_success_searching",
         "children" : [ {
           "name" : "Проверка поиска продуктов на сайте магазина",
-          "uid" : "1144bf5d37598d23",
+          "uid" : "9870c77fa0bc536b",
           "parentUid" : "e2e0a6d7e59e43f33123a69ec38125cf",
           "status" : "passed",
           "time" : {
-            "start" : 1639981846642,
-            "stop" : 1639981847026,
-            "duration" : 384
+            "start" : 1639982282721,
+            "stop" : 1639982283075,
+            "duration" : 354
           },
           "flaky" : false,
           "newFailed" : false,
