@@ -1,7 +1,4 @@
-
 # Автотесты для интернет магазина Product Shop
-
-Статус проекта
 
 [![code_quality](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_code_quality.yml/badge.svg?branch=main)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_code_quality.yml)
 [![pytest](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml/badge.svg?branch=main)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml)
@@ -10,13 +7,13 @@
 
 Реализован проект тестирования [web-портала продуктового магазина](https://berpress.github.io/online-grocery-store/).
 
-Результатом работы автотестирования, является сгенерированный Allure отчет с результатами прогона тестов.
+Результатом работы автотестирования, является сгенерированный Allure отчет с результатами прогона тестов проекта.
 
 В рамках данного проекта автоматизированы основные сценарии пользователей:
+
 * работа с корзиной
 * поиск товара
 * оформление покупки
-* и т.д.
 
 # Запуск
 
@@ -45,7 +42,6 @@ pytest --headless=False
     pre-commit run --all-files
 ```
 
-
 # Отчетность выполнения тестов
 
 В проекте подключена отчетность на основе Allure Report для последней версии тестов.
@@ -57,10 +53,11 @@ pytest --headless=False
 Отчет доступен по ссылке - [Allure Report](https://gonuskus.github.io/Innopolis_final/)
 
 ## Просмотр отчётов при локальном запуске тестов
+
 ### Запуск
 
 ```
-    pytest --alluredir <dir_name>
+pytest --alluredir <dir_name>
 ```
 
 ### Просмотр отчёта
@@ -69,16 +66,17 @@ pytest --headless=False
 allure serve <dir_name>
 ```
 
-
 # Инструкция установки и запуска тестов
+
 ## Установка
+
 1. Создайте отдельную папку на локальном компьютере
 2. Скачайте все файлы из [проекта](https://github.com/gonuskus/Innopolis_final)
 3. Скачанные файлы переложите в созданную на 1 шаге папку
 
 ### Зависимости проекта:
-Для локального запуска проекта необходимо установить Python версии 3.8 и старше.
 
+Для локального запуска проекта необходимо установить Python версии 3.8 и старше.
 
 [Подробнее](https://www.python.org/downloads/) об установке можно прочитать на официальном сайте.
 
@@ -87,11 +85,14 @@ allure serve <dir_name>
 ```bash
 pip3 install -r requirements.txt
 ```
-Результат выполнения команды будет установка пакетов, требуемых для выполнения тестов.
-Далее можно запускать тесты.
+
+Результат выполнения команды будет установка пакетов, требуемых для выполнения тестов. Далее можно запускать тесты.
 
 # CI
 
 Проект подключен к сервису GitHub.
 
-На основе [GitHub Actions](https://github.com/gonuskus/Innopolis_final/actions) реализован код запуска прогона тестов и подготовки отчетности.
+На основе [GitHub Actions](https://github.com/gonuskus/Innopolis_final/actions) реализован код *(.github/workflows)*:
+
+* запуска прогона тестов и подготовки отчетности - workflow_pytest.yml
+* проверка качества кода - workflow_code_quality.yml
