@@ -4,11 +4,20 @@
       "failed" : 2,
       "broken" : 7,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "f599bbd05d41bd09",
+      "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/f599bbd05d41bd09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639980943366,
+        "stop" : 1639980945911,
+        "duration" : 2545
+      }
+    }, {
       "uid" : "ec0c035657107c5",
       "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/ec0c035657107c5",
       "status" : "broken",
@@ -141,11 +150,20 @@
       "failed" : 2,
       "broken" : 7,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "8dcfe628b9f2f26c",
+      "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/8dcfe628b9f2f26c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639980935143,
+        "stop" : 1639980939932,
+        "duration" : 4789
+      }
+    }, {
       "uid" : "28b5ca40a446c19d",
       "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/28b5ca40a446c19d",
       "status" : "broken",
@@ -278,11 +296,20 @@
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 17,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 18
+      "total" : 19
     },
     "items" : [ {
+      "uid" : "fec45e1ba8f6c3e3",
+      "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/fec45e1ba8f6c3e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639980949289,
+        "stop" : 1639980949649,
+        "duration" : 360
+      }
+    }, {
       "uid" : "280b21089e11b952",
       "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/280b21089e11b952",
       "status" : "failed",
@@ -452,11 +479,20 @@
       "failed" : 1,
       "broken" : 7,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "c3e9f124cfaa9954",
+      "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/c3e9f124cfaa9954",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639980945995,
+        "stop" : 1639980949202,
+        "duration" : 3207
+      }
+    }, {
       "uid" : "4dd6024f1967b077",
       "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/4dd6024f1967b077",
       "status" : "failed",
@@ -700,11 +736,20 @@
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 17,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 18
+      "total" : 19
     },
     "items" : [ {
+      "uid" : "51d83d71b0f5bc1f",
+      "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/51d83d71b0f5bc1f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639980949745,
+        "stop" : 1639980950212,
+        "duration" : 467
+      }
+    }, {
       "uid" : "329dfe4b1e907112",
       "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/329dfe4b1e907112",
       "status" : "failed",
@@ -872,13 +917,23 @@
   "bfb2a631159e0d61a0f93482a5663fd8" : {
     "statistic" : {
       "failed" : 1,
-      "broken" : 9,
+      "broken" : 10,
       "skipped" : 0,
       "passed" : 8,
       "unknown" : 0,
-      "total" : 18
+      "total" : 19
     },
     "items" : [ {
+      "uid" : "3f902ba4fa66e6f0",
+      "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/3f902ba4fa66e6f0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i class=\"material-icons basket-delete\">...</i> is not clickable at point (709, 122). Other element would receive the click: <div class=\"cart red darken-4 white-text\">...</div>\n  (Session info: headless chrome=96.0.4664.110)\nStacktrace:\n#0 0x556397f30ee3 <unknown>\n#1 0x5563979fe608 <unknown>\n#2 0x556397a3c044 <unknown>\n#3 0x556397a39af4 <unknown>\n#4 0x556397a372da <unknown>\n#5 0x556397a35ce2 <unknown>\n#6 0x556397a297b8 <unknown>\n#7 0x556397a52272 <unknown>\n#8 0x556397a29063 <unknown>\n#9 0x556397a5237e <unknown>\n#10 0x556397a653bc <unknown>\n#11 0x556397a52163 <unknown>\n#12 0x556397a27bfc <unknown>\n#13 0x556397a28c05 <unknown>\n#14 0x556397f62baa <unknown>\n#15 0x556397f78651 <unknown>\n#16 0x556397f63b05 <unknown>\n#17 0x556397f79a68 <unknown>\n#18 0x556397f5805f <unknown>\n#19 0x556397f94818 <unknown>\n#20 0x556397f94998 <unknown>\n#21 0x556397fafeed <unknown>\n#22 0x7f7cde91a609 <unknown>",
+      "time" : {
+        "start" : 1639980940023,
+        "stop" : 1639980943246,
+        "duration" : 3223
+      }
+    }, {
       "uid" : "833f054d3c06f71a",
       "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/833f054d3c06f71a",
       "status" : "failed",
@@ -1057,11 +1112,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 13
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "19b194c3bda6ec0b",
+      "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/19b194c3bda6ec0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639980932900,
+        "stop" : 1639980934975,
+        "duration" : 2075
+      }
+    }, {
       "uid" : "fb809deb0c69574d",
       "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/fb809deb0c69574d",
       "status" : "passed",

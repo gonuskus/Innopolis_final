@@ -4,10 +4,10 @@
     "uid" : "38f477e5c4a8ca60998f16b07605147b",
     "name" : "Продуктовый магазин",
     "statistic" : {
-      "failed" : 3,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 3
     }

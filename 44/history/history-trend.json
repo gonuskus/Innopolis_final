@@ -3,6 +3,18 @@
   "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44/",
   "reportName" : "Allure Report with history",
   "data" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 6,
+    "unknown" : 0,
+    "total" : 7
+  }
+}, {
+  "buildOrder" : 44,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44/",
+  "reportName" : "Allure Report with history",
+  "data" : {
     "failed" : 4,
     "broken" : 2,
     "skipped" : 0,
