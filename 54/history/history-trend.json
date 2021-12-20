@@ -3,6 +3,42 @@
   "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54/",
   "reportName" : "Allure Report with history",
   "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 7,
+    "unknown" : 0,
+    "total" : 7
+  }
+}, {
+  "buildOrder" : 56,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/56/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 7,
+    "unknown" : 0,
+    "total" : 7
+  }
+}, {
+  "buildOrder" : 55,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/55/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 7,
+    "unknown" : 0,
+    "total" : 7
+  }
+}, {
+  "buildOrder" : 54,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54/",
+  "reportName" : "Allure Report with history",
+  "data" : {
     "failed" : 1,
     "broken" : 0,
     "skipped" : 0,
@@ -199,42 +235,6 @@
     "broken" : 1,
     "skipped" : 0,
     "passed" : 6,
-    "unknown" : 0,
-    "total" : 7
-  }
-}, {
-  "buildOrder" : 40,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/40/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 1,
-    "skipped" : 0,
-    "passed" : 6,
-    "unknown" : 0,
-    "total" : 7
-  }
-}, {
-  "buildOrder" : 39,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/39/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 7,
-    "unknown" : 0,
-    "total" : 7
-  }
-}, {
-  "buildOrder" : 38,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/38/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 3,
-    "skipped" : 0,
-    "passed" : 4,
     "unknown" : 0,
     "total" : 7
   }

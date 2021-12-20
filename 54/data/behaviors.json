@@ -6,39 +6,39 @@
       "name" : "Работа с Корзиной",
       "children" : [ {
         "name" : "Проверка стартового состояния Корзины",
-        "uid" : "8f20adcc51c11002",
+        "uid" : "5b75a24d9f377a99",
         "parentUid" : "4ba923ae1c62b447e963edfaa5350196",
         "status" : "passed",
         "time" : {
-          "start" : 1640010925192,
-          "stop" : 1640010928260,
-          "duration" : 3068
+          "start" : 1640014859532,
+          "stop" : 1640014862323,
+          "duration" : 2791
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка очистки формы Корзины после совершения покупки",
-        "uid" : "8b04b0dea2707ac2",
-        "parentUid" : "4ba923ae1c62b447e963edfaa5350196",
-        "status" : "failed",
-        "time" : {
-          "start" : 1640010928462,
-          "stop" : 1640010932767,
-          "duration" : 4305
-        },
-        "flaky" : true,
-        "newFailed" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "Проверка очистки формы Корзины до совершения покупки",
-        "uid" : "4bb891d74477c777",
+        "uid" : "469464ae340ea12c",
         "parentUid" : "4ba923ae1c62b447e963edfaa5350196",
         "status" : "passed",
         "time" : {
-          "start" : 1640010932931,
-          "stop" : 1640010938941,
-          "duration" : 6010
+          "start" : 1640014862489,
+          "stop" : 1640014870282,
+          "duration" : 7793
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка очистки формы Корзины до совершения покупки",
+        "uid" : "5ef521a374062c81",
+        "parentUid" : "4ba923ae1c62b447e963edfaa5350196",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640014870383,
+          "stop" : 1640014875434,
+          "duration" : 5051
         },
         "flaky" : false,
         "newFailed" : false,
@@ -49,26 +49,26 @@
       "name" : "Покупка продуктов",
       "children" : [ {
         "name" : "Проверка возможности совершить покупку единственного товара",
-        "uid" : "4c231aed43ee7c66",
+        "uid" : "eedb7fc64ece1fb3",
         "parentUid" : "fff887d40ecbe3d09df1a6d29b5b10d2",
         "status" : "passed",
         "time" : {
-          "start" : 1640010939140,
-          "stop" : 1640010942904,
-          "duration" : 3764
+          "start" : 1640014875600,
+          "stop" : 1640014879183,
+          "duration" : 3583
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка возможности совершить покупку нескольких товаров",
-        "uid" : "3531b3ab9ce40efe",
+        "uid" : "fbdaf6857dcff64a",
         "parentUid" : "fff887d40ecbe3d09df1a6d29b5b10d2",
         "status" : "passed",
         "time" : {
-          "start" : 1640010942987,
-          "stop" : 1640010947318,
-          "duration" : 4331
+          "start" : 1640014879251,
+          "stop" : 1640014883706,
+          "duration" : 4455
         },
         "flaky" : false,
         "newFailed" : false,
@@ -79,26 +79,26 @@
       "name" : "Поиск товаров",
       "children" : [ {
         "name" : "Проверка поиска несуществующего продукта",
-        "uid" : "c4fc2763da9173fa",
+        "uid" : "a9374f7a657774f4",
         "parentUid" : "1b6383dcf12753938390dbd39f7aed3e",
         "status" : "passed",
         "time" : {
-          "start" : 1640010947423,
-          "stop" : 1640010947759,
-          "duration" : 336
+          "start" : 1640014883782,
+          "stop" : 1640014884164,
+          "duration" : 382
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Проверка поиска продуктов на сайте магазина",
-        "uid" : "ed2bf5b6e24609bd",
+        "uid" : "38ecd12dcbd38110",
         "parentUid" : "1b6383dcf12753938390dbd39f7aed3e",
         "status" : "passed",
         "time" : {
-          "start" : 1640010947873,
-          "stop" : 1640010948269,
-          "duration" : 396
+          "start" : 1640014884271,
+          "stop" : 1640014884804,
+          "duration" : 533
         },
         "flaky" : false,
         "newFailed" : false,

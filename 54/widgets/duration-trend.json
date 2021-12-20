@@ -3,6 +3,27 @@
   "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54/",
   "reportName" : "Allure Report with history",
   "data" : {
+    "duration" : 25272
+  }
+}, {
+  "buildOrder" : 56,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/56/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 25609
+  }
+}, {
+  "buildOrder" : 55,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/55/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 24981
+  }
+}, {
+  "buildOrder" : 54,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54/",
+  "reportName" : "Allure Report with history",
+  "data" : {
     "duration" : 23077
   }
 }, {
@@ -116,26 +137,5 @@
   "reportName" : "Allure Report with history",
   "data" : {
     "duration" : 17520
-  }
-}, {
-  "buildOrder" : 40,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/40/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 18345
-  }
-}, {
-  "buildOrder" : 39,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/39/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 16200
-  }
-}, {
-  "buildOrder" : 38,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/38/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 49610
   }
 } ]
