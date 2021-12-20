@@ -1,2 +1,0 @@
-INFO     root:base_page.py:39 Open https://berpress.github.io/online-grocery-store/
-INFO     root:main_page.py:74 Random product with different quantities have been added to the cart

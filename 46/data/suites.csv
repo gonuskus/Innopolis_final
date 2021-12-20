@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Dec 20 06:41:32 GMT 2021","Mon Dec 20 06:41:34 GMT 2021","2523","tests.Buying","test_success_buying_one_product","","","","Проверка возможности совершить покупку единственного товара",""
-"passed","Mon Dec 20 06:41:38 GMT 2021","Mon Dec 20 06:41:39 GMT 2021","485","tests.Search","test_success_searching","","","","Проверка поиска продуктов на сайте магазина",""
-"passed","Mon Dec 20 06:41:24 GMT 2021","Mon Dec 20 06:41:29 GMT 2021","4581","tests.Basket","test_cleaning_basket_after_buying","","","","Проверка очистки формы Корзины после совершения покупки",""
-"broken","Mon Dec 20 06:41:29 GMT 2021","Mon Dec 20 06:41:32 GMT 2021","3133","tests.Basket","test_deleting_products_from_basket","","","","Проверка очистки формы Корзины до совершения покупки",""
-"passed","Mon Dec 20 06:41:22 GMT 2021","Mon Dec 20 06:41:24 GMT 2021","2191","tests.Basket","test_checking_basket_form","","","","Проверка стартового состояния Корзины",""
-"passed","Mon Dec 20 06:41:35 GMT 2021","Mon Dec 20 06:41:38 GMT 2021","3075","tests.Buying","test_success_buying_several_products","","","","Проверка возможности совершить покупку нескольких товаров",""
-"passed","Mon Dec 20 06:41:38 GMT 2021","Mon Dec 20 06:41:38 GMT 2021","381","tests.Search","test_failed_searching","","","","Проверка поиска несуществующего продукта",""
