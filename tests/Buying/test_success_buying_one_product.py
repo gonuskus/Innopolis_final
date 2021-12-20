@@ -7,6 +7,8 @@ import allure
 def test_success_buying_one_product(app):
     with allure.step("Открыть страницу магазина"):
         app.main_page.open_page("")
+    with allure.step("Проверить отображение продуктов"):
+        app.main_page.viewing_products_list()
     with allure.step("Набрать продуктов в корзину"):
         app.main_page.random_click_on_buying_one_product()
     with allure.step("Открыть корзину"):
