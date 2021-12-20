@@ -3,7 +3,7 @@
 
 Статус проекта
 
-[![flake8](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_flake8.yml/badge.svg?branch=main)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_flake8.yml)
+[![code_quality](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_code_quality.yml/badge.svg?branch=main)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_code_quality.yml)
 [![pytest](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml/badge.svg?branch=main)](https://github.com/gonuskus/Innopolis_final/actions/workflows/workflow_pytest.yml)
 [![Allure](https://img.shields.io/static/v1?label=AllureReport&message=informational&color=blue)](https://gonuskus.github.io/Innopolis_final/)
 ***
@@ -18,7 +18,7 @@
 * оформление покупки
 * и т.д.
 
-#Запуск
+# Запуск
 
 Указан пример со всеми возможными опциями
 
