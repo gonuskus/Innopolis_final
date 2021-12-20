@@ -17,7 +17,7 @@ class BasketForm(BasePage):
         self.find_element(BasketFormLocator.BASKET_FORM)
 
     def check_shopping_list(self):
-        time.sleep(1)
+        time.sleep(2)
         return self.find_element(BasketFormLocator.BASKET_LIST).text
 
     def get_total_price(self):
@@ -49,5 +49,5 @@ class BasketForm(BasePage):
         button = self.find_clickable_element(BasketFormLocator.BUY_BTN)
         self.app.wd.execute_script("arguments[0].click();", button)
 
-    def buying_button(self) -> WebElement:
-        return self.find_clickable_element(BasketFormLocator.BUY_BTN)
+    # def buying_button(self) -> WebElement:
+    #     return self.find_clickable_element(BasketFormLocator.BUY_BTN)
