@@ -1,6 +1,20 @@
 name: pytest
 
-on: [push]
+on:
+  push:
+    paths:
+      - '/fixtures/**'
+      - 'locators/**'
+      - 'models/**'
+      - 'pages/**'
+      - 'tests/**'
+  pull_request:
+     paths:
+      - 'fixtures/**'
+      - 'locators/**'
+      - 'models/**'
+      - 'pages/**'
+      - 'tests/**'
 
 jobs:
   build:
