@@ -1,0 +1,4 @@
+INFO     root:base_page.py:39 Open https://berpress.github.io/online-grocery-store/
+INFO     root:main_page.py:30 Bread was found
+INFO     root:application.py:30 Quit app
+INFO     root:application.py:36 create_allure_report result : 32512
