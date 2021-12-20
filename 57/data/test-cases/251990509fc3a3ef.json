@@ -1,0 +1,547 @@
+{
+  "uid" : "251990509fc3a3ef",
+  "name" : "Проверка очистки формы Корзины после совершения покупки",
+  "fullName" : "tests.Basket.test_cleaning_basket_after_buying#test_cleaning_basket_after_buying",
+  "historyId" : "7c789ac4eb92f71557850da3a9ac00c2",
+  "time" : {
+    "start" : 1640017156979,
+    "stop" : 1640017164622,
+    "duration" : 7643
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1640017152408,
+      "stop" : 1640017152481,
+      "duration" : 73
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1640017152481,
+      "stop" : 1640017154110,
+      "duration" : 1629
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "screenshot_after_test",
+    "time" : {
+      "start" : 1640017156978,
+      "stop" : 1640017156978,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть страницу магазина",
+      "time" : {
+        "start" : 1640017156979,
+        "stop" : 1640017157014,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Нажать на иконку 'Корзина' и проверить что отобразилась форма Корзины",
+      "time" : {
+        "start" : 1640017157014,
+        "stop" : 1640017157082,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что корзина пустая",
+      "time" : {
+        "start" : 1640017157083,
+        "stop" : 1640017159105,
+        "duration" : 2022
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, стоимость товаров в корзине - должно быть 0 руб",
+      "time" : {
+        "start" : 1640017159105,
+        "stop" : 1640017159123,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Закрыть форму Корзина",
+      "time" : {
+        "start" : 1640017159124,
+        "stop" : 1640017159182,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Набрать продуктов в корзину",
+      "time" : {
+        "start" : 1640017159182,
+        "stop" : 1640017159381,
+        "duration" : 199
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Открыть корзину",
+      "time" : {
+        "start" : 1640017159381,
+        "stop" : 1640017159433,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что в корзине находятся товары",
+      "time" : {
+        "start" : 1640017159434,
+        "stop" : 1640017161458,
+        "duration" : 2024
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Нажать кнопку покупки",
+      "time" : {
+        "start" : 1640017161458,
+        "stop" : 1640017161495,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что появилось сообщение об успешности покупки",
+      "time" : {
+        "start" : 1640017161495,
+        "stop" : 1640017162524,
+        "duration" : 1029
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что корзина очистилась",
+      "time" : {
+        "start" : 1640017162524,
+        "stop" : 1640017164546,
+        "duration" : 2022
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, стоимость товаров в корзине сбросилась - должно быть 0 руб",
+      "time" : {
+        "start" : 1640017164546,
+        "stop" : 1640017164563,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Закрыть форму Корзина",
+      "time" : {
+        "start" : 1640017164563,
+        "stop" : 1640017164622,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "dc3164ea5c28c5ce",
+      "name" : "log",
+      "source" : "dc3164ea5c28c5ce.txt",
+      "type" : "text/plain",
+      "size" : 182
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 13,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "app::0",
+    "time" : {
+      "start" : 1640017180466,
+      "stop" : 1640017180523,
+      "duration" : 57
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "screenshot_after_test::0",
+    "time" : {
+      "start" : 1640017164622,
+      "stop" : 1640017164724,
+      "duration" : 102
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c475757d9f904e73",
+      "name" : "screenshot",
+      "source" : "c475757d9f904e73.png",
+      "type" : "image/png",
+      "size" : 116137
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Продуктовый магазин"
+  }, {
+    "name" : "feature",
+    "value" : "Работа с Корзиной"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.Basket"
+  }, {
+    "name" : "suite",
+    "value" : "test_cleaning_basket_after_buying"
+  }, {
+    "name" : "host",
+    "value" : "fv-az82-291"
+  }, {
+    "name" : "thread",
+    "value" : "2746-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.Basket.test_cleaning_basket_after_buying"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 6,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 32
+      },
+      "items" : [ {
+        "uid" : "213ff528c06f3348",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/58//#testresult/213ff528c06f3348",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640017056695,
+          "stop" : 1640017064224,
+          "duration" : 7529
+        }
+      }, {
+        "uid" : "5a133e3709fe3c30",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/57//#testresult/5a133e3709fe3c30",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fa827674ac0>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fa827674ac0>> = <pages.basket_form.BasketForm object at 0x7fa827674ac0>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7fa827674ac0> = <fixtures.application.Application object at 0x7fa8276ccc70>.basket_form",
+        "time" : {
+          "start" : 1640016609451,
+          "stop" : 1640016613685,
+          "duration" : 4234
+        }
+      }, {
+        "uid" : "469464ae340ea12c",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54//#testresult/469464ae340ea12c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640014862489,
+          "stop" : 1640014870282,
+          "duration" : 7793
+        }
+      }, {
+        "uid" : "a7297a72e8ae3251",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/56//#testresult/a7297a72e8ae3251",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640013318095,
+          "stop" : 1640013325744,
+          "duration" : 7649
+        }
+      }, {
+        "uid" : "16f54aa2c25127e3",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/55//#testresult/16f54aa2c25127e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640012910626,
+          "stop" : 1640012918211,
+          "duration" : 7585
+        }
+      }, {
+        "uid" : "8b04b0dea2707ac2",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54//#testresult/8b04b0dea2707ac2",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f518a71b6d0>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f518a71b6d0>> = <pages.basket_form.BasketForm object at 0x7f518a71b6d0>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7f518a71b6d0> = <fixtures.application.Application object at 0x7f518a71bac0>.basket_form",
+        "time" : {
+          "start" : 1640010928462,
+          "stop" : 1640010932767,
+          "duration" : 4305
+        }
+      }, {
+        "uid" : "c4bb1e14b01a8f31",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/53//#testresult/c4bb1e14b01a8f31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984993229,
+          "stop" : 1639985000831,
+          "duration" : 7602
+        }
+      }, {
+        "uid" : "716ff259697c1190",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/52//#testresult/716ff259697c1190",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984794139,
+          "stop" : 1639984801865,
+          "duration" : 7726
+        }
+      }, {
+        "uid" : "92adbc47e9d76366",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/51//#testresult/92adbc47e9d76366",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984573420,
+          "stop" : 1639984581419,
+          "duration" : 7999
+        }
+      }, {
+        "uid" : "f990d081053d1053",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/50//#testresult/f990d081053d1053",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984186984,
+          "stop" : 1639984194441,
+          "duration" : 7457
+        }
+      }, {
+        "uid" : "516ddf8109657008",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/50//#testresult/516ddf8109657008",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639983026249,
+          "stop" : 1639983033793,
+          "duration" : 7544
+        }
+      }, {
+        "uid" : "7c12ecf57e69495c",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/48//#testresult/7c12ecf57e69495c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982791516,
+          "stop" : 1639982799267,
+          "duration" : 7751
+        }
+      }, {
+        "uid" : "1f5bb4523ae1dc1a",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/47//#testresult/1f5bb4523ae1dc1a",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fc309e5f100>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fc309e5f100>> = <pages.basket_form.BasketForm object at 0x7fc309e5f100>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7fc309e5f100> = <fixtures.application.Application object at 0x7fc309df14f0>.basket_form",
+        "time" : {
+          "start" : 1639982650986,
+          "stop" : 1639982655300,
+          "duration" : 4314
+        }
+      }, {
+        "uid" : "760236e32056e23d",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/760236e32056e23d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982484442,
+          "stop" : 1639982489023,
+          "duration" : 4581
+        }
+      }, {
+        "uid" : "c696e1d2c2ea48a5",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/c696e1d2c2ea48a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982267326,
+          "stop" : 1639982271973,
+          "duration" : 4647
+        }
+      }, {
+        "uid" : "a08f23fcff010909",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/a08f23fcff010909",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f51a4206d60>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f51a4206d60>> = <pages.basket_form.BasketForm object at 0x7f51a4206d60>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7f51a4206d60> = <fixtures.application.Application object at 0x7f51a421a9d0>.basket_form",
+        "time" : {
+          "start" : 1639981834391,
+          "stop" : 1639981836712,
+          "duration" : 2321
+        }
+      }, {
+        "uid" : "95132a9a047eb3bc",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/45//#testresult/95132a9a047eb3bc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981277981,
+          "stop" : 1639981282673,
+          "duration" : 4692
+        }
+      }, {
+        "uid" : "8dcfe628b9f2f26c",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/8dcfe628b9f2f26c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980935143,
+          "stop" : 1639980939932,
+          "duration" : 4789
+        }
+      }, {
+        "uid" : "28b5ca40a446c19d",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/28b5ca40a446c19d",
+        "status" : "broken",
+        "statusDetails" : "ValueError: empty range for randrange() (1, 0, -1)",
+        "time" : {
+          "start" : 1639980600479,
+          "stop" : 1639980611768,
+          "duration" : 11289
+        }
+      }, {
+        "uid" : "786a4825472db0c4",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/43//#testresult/786a4825472db0c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639978166987,
+          "stop" : 1639978171892,
+          "duration" : 4905
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "251990509fc3a3ef.json",
+  "parameterValues" : [ ]
+}

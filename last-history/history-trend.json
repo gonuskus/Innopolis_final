@@ -1,4 +1,16 @@
 [ {
+  "buildOrder" : 57,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/57/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 7,
+    "unknown" : 0,
+    "total" : 7
+  }
+}, {
   "buildOrder" : 58,
   "reportUrl" : "https://gonuskus.github.io/Innopolis_final/58/",
   "reportName" : "Allure Report with history",
@@ -223,18 +235,6 @@
     "broken" : 2,
     "skipped" : 0,
     "passed" : 1,
-    "unknown" : 0,
-    "total" : 7
-  }
-}, {
-  "buildOrder" : 43,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/43/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 1,
-    "broken" : 1,
-    "skipped" : 0,
-    "passed" : 5,
     "unknown" : 0,
     "total" : 7
   }
