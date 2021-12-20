@@ -1,0 +1,71 @@
+[ {
+  "uid" : "5372808feca0b08c",
+  "name" : "Проверка стартового состояния Корзины",
+  "time" : {
+    "start" : 1639982788578,
+    "stop" : 1639982791285,
+    "duration" : 2707
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2fb3548f53c6e03",
+  "name" : "Проверка поиска несуществующего продукта",
+  "time" : {
+    "start" : 1639982813048,
+    "stop" : 1639982813417,
+    "duration" : 369
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c12ecf57e69495c",
+  "name" : "Проверка очистки формы Корзины после совершения покупки",
+  "time" : {
+    "start" : 1639982791516,
+    "stop" : 1639982799267,
+    "duration" : 7751
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b6cd8cdf56e1aa8",
+  "name" : "Проверка возможности совершить покупку нескольких товаров",
+  "time" : {
+    "start" : 1639982808825,
+    "stop" : 1639982812933,
+    "duration" : 4108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0f7f515ef4e494d",
+  "name" : "Проверка поиска продуктов на сайте магазина",
+  "time" : {
+    "start" : 1639982813521,
+    "stop" : 1639982813967,
+    "duration" : 446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e6965fba417baed",
+  "name" : "Проверка возможности совершить покупку единственного товара",
+  "time" : {
+    "start" : 1639982805299,
+    "stop" : 1639982808687,
+    "duration" : 3388
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6de2c51fa687daaa",
+  "name" : "Проверка очистки формы Корзины до совершения покупки",
+  "time" : {
+    "start" : 1639982799389,
+    "stop" : 1639982805073,
+    "duration" : 5684
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
