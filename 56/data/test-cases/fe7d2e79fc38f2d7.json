@@ -1,0 +1,414 @@
+{
+  "uid" : "fe7d2e79fc38f2d7",
+  "name" : "Проверка поиска продуктов на сайте магазина",
+  "fullName" : "tests.Search.test_success_searching#test_success_searching",
+  "historyId" : "e0721a972e279ad62ad0f8bee355faed",
+  "time" : {
+    "start" : 1640013340585,
+    "stop" : 1640013340919,
+    "duration" : 334
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "screenshot_after_test",
+    "time" : {
+      "start" : 1640013340584,
+      "stop" : 1640013340584,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1640013313609,
+      "stop" : 1640013315307,
+      "duration" : 1698
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1640013313535,
+      "stop" : 1640013313609,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть страницу магазина",
+      "time" : {
+        "start" : 1640013340585,
+        "stop" : 1640013340618,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить отображение продуктов",
+      "time" : {
+        "start" : 1640013340618,
+        "stop" : 1640013340736,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Вбить в поиск название продукта",
+      "time" : {
+        "start" : 1640013340736,
+        "stop" : 1640013340900,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить успешность поиска",
+      "time" : {
+        "start" : 1640013340900,
+        "stop" : 1640013340919,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "13193cc58ffa7592",
+      "name" : "log",
+      "source" : "13193cc58ffa7592.txt",
+      "type" : "text/plain",
+      "size" : 239
+    }, {
+      "uid" : "7337395415ef9553",
+      "name" : "stderr",
+      "source" : "7337395415ef9553.txt",
+      "type" : "text/plain",
+      "size" : 25
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "screenshot_after_test::0",
+    "time" : {
+      "start" : 1640013340919,
+      "stop" : 1640013341040,
+      "duration" : 121
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "20e6f61d02ecff23",
+      "name" : "screenshot",
+      "source" : "20e6f61d02ecff23.png",
+      "type" : "image/png",
+      "size" : 95984
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "app::0",
+    "time" : {
+      "start" : 1640013341041,
+      "stop" : 1640013341099,
+      "duration" : 58
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Поиск товаров"
+  }, {
+    "name" : "epic",
+    "value" : "Продуктовый магазин"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.Search"
+  }, {
+    "name" : "suite",
+    "value" : "test_success_searching"
+  }, {
+    "name" : "host",
+    "value" : "fv-az72-898"
+  }, {
+    "name" : "thread",
+    "value" : "2727-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.Search.test_success_searching"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 32,
+        "unknown" : 0,
+        "total" : 33
+      },
+      "items" : [ {
+        "uid" : "48ef99dc0d7ffd71",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/55//#testresult/48ef99dc0d7ffd71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640012932276,
+          "stop" : 1640012932745,
+          "duration" : 469
+        }
+      }, {
+        "uid" : "ed2bf5b6e24609bd",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54//#testresult/ed2bf5b6e24609bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640010947873,
+          "stop" : 1640010948269,
+          "duration" : 396
+        }
+      }, {
+        "uid" : "4a2dadf374e57a57",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/53//#testresult/4a2dadf374e57a57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639985015182,
+          "stop" : 1639985015737,
+          "duration" : 555
+        }
+      }, {
+        "uid" : "b251a34112dfab4d",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/52//#testresult/b251a34112dfab4d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984816190,
+          "stop" : 1639984816671,
+          "duration" : 481
+        }
+      }, {
+        "uid" : "b4608b35b00f47ed",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/51//#testresult/b4608b35b00f47ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984596131,
+          "stop" : 1639984596715,
+          "duration" : 584
+        }
+      }, {
+        "uid" : "b510f839a4536e47",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/50//#testresult/b510f839a4536e47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984208482,
+          "stop" : 1639984208855,
+          "duration" : 373
+        }
+      }, {
+        "uid" : "e166734b94d5d4c2",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/50//#testresult/e166734b94d5d4c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639983047851,
+          "stop" : 1639983048321,
+          "duration" : 470
+        }
+      }, {
+        "uid" : "b0f7f515ef4e494d",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/48//#testresult/b0f7f515ef4e494d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982813521,
+          "stop" : 1639982813967,
+          "duration" : 446
+        }
+      }, {
+        "uid" : "9cf840bea9bb4197",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/47//#testresult/9cf840bea9bb4197",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982667593,
+          "stop" : 1639982667943,
+          "duration" : 350
+        }
+      }, {
+        "uid" : "b5d9d4c8f37f7a9f",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/b5d9d4c8f37f7a9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982498679,
+          "stop" : 1639982499164,
+          "duration" : 485
+        }
+      }, {
+        "uid" : "9870c77fa0bc536b",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/9870c77fa0bc536b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982282721,
+          "stop" : 1639982283075,
+          "duration" : 354
+        }
+      }, {
+        "uid" : "1144bf5d37598d23",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/1144bf5d37598d23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981846642,
+          "stop" : 1639981847026,
+          "duration" : 384
+        }
+      }, {
+        "uid" : "dd554134939e0ad5",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/45//#testresult/dd554134939e0ad5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981293356,
+          "stop" : 1639981293683,
+          "duration" : 327
+        }
+      }, {
+        "uid" : "51d83d71b0f5bc1f",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/51d83d71b0f5bc1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980949745,
+          "stop" : 1639980950212,
+          "duration" : 467
+        }
+      }, {
+        "uid" : "329dfe4b1e907112",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/329dfe4b1e907112",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1639980653498,
+          "stop" : 1639980663565,
+          "duration" : 10067
+        }
+      }, {
+        "uid" : "3cb2465103d148b1",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/43//#testresult/3cb2465103d148b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639978180945,
+          "stop" : 1639978181371,
+          "duration" : 426
+        }
+      }, {
+        "uid" : "2bbb22978195b4e",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/42//#testresult/2bbb22978195b4e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639977966286,
+          "stop" : 1639977966644,
+          "duration" : 358
+        }
+      }, {
+        "uid" : "98e5123bb9715dfe",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/41//#testresult/98e5123bb9715dfe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639977932260,
+          "stop" : 1639977932728,
+          "duration" : 468
+        }
+      }, {
+        "uid" : "74741f5daec0bc1f",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/40//#testresult/74741f5daec0bc1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639940125846,
+          "stop" : 1639940126427,
+          "duration" : 581
+        }
+      }, {
+        "uid" : "be577be79055df86",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/39//#testresult/be577be79055df86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639939752668,
+          "stop" : 1639939753133,
+          "duration" : 465
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fe7d2e79fc38f2d7.json",
+  "parameterValues" : [ ]
+}
