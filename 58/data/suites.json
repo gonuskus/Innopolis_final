@@ -1,0 +1,136 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests.Basket",
+    "children" : [ {
+      "name" : "test_checking_basket_form",
+      "children" : [ {
+        "name" : "Проверка стартового состояния Корзины",
+        "uid" : "574c412ed66f9ae3",
+        "parentUid" : "86ca76e28488654e440fbf2db6e5e82f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640017054002,
+          "stop" : 1640017056512,
+          "duration" : 2510
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "86ca76e28488654e440fbf2db6e5e82f"
+    }, {
+      "name" : "test_cleaning_basket_after_buying",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины после совершения покупки",
+        "uid" : "213ff528c06f3348",
+        "parentUid" : "2bfd9e16ec98e9eab3cc43943fe9392a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640017056695,
+          "stop" : 1640017064224,
+          "duration" : 7529
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2bfd9e16ec98e9eab3cc43943fe9392a"
+    }, {
+      "name" : "test_deleting_products_from_basket",
+      "children" : [ {
+        "name" : "Проверка очистки формы Корзины до совершения покупки",
+        "uid" : "57c3fa1984f8dcd4",
+        "parentUid" : "1530edc7276a446dbd988cf798c0ea9e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640017064408,
+          "stop" : 1640017070054,
+          "duration" : 5646
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1530edc7276a446dbd988cf798c0ea9e"
+    } ],
+    "uid" : "24f47cb659c819dec8a6ea5904226f55"
+  }, {
+    "name" : "tests.Buying",
+    "children" : [ {
+      "name" : "test_success_buying_one_product",
+      "children" : [ {
+        "name" : "Проверка возможности совершить покупку единственного товара",
+        "uid" : "ce54711cd70cfd1a",
+        "parentUid" : "d682085747d006b5b97445cbfc5e0fe0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1640017070224,
+          "stop" : 1640017072531,
+          "duration" : 2307
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d682085747d006b5b97445cbfc5e0fe0"
+    }, {
+      "name" : "test_success_buying_several_products",
+      "children" : [ {
+        "name" : "Проверка возможности совершить покупку нескольких товаров",
+        "uid" : "6b36e30c0b107695",
+        "parentUid" : "51fadbd30a320e7dd43c5666ef20a034",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640017072682,
+          "stop" : 1640017077170,
+          "duration" : 4488
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "51fadbd30a320e7dd43c5666ef20a034"
+    } ],
+    "uid" : "4dcf5aee167e9392591e3c2fe708eca8"
+  }, {
+    "name" : "tests.Search",
+    "children" : [ {
+      "name" : "test_failed_searching",
+      "children" : [ {
+        "name" : "Проверка поиска несуществующего продукта",
+        "uid" : "efe041bc4a6bcab",
+        "parentUid" : "21b3f3509f395728f8717a283c0bc21b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640017077262,
+          "stop" : 1640017077613,
+          "duration" : 351
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "21b3f3509f395728f8717a283c0bc21b"
+    }, {
+      "name" : "test_success_searching",
+      "children" : [ {
+        "name" : "Проверка поиска продуктов на сайте магазина",
+        "uid" : "b221becf8ea9a1f3",
+        "parentUid" : "d8f51d0ad096ecfb0a12bcb64ec7b75b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640017077699,
+          "stop" : 1640017078191,
+          "duration" : 492
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d8f51d0ad096ecfb0a12bcb64ec7b75b"
+    } ],
+    "uid" : "d66b1c95698cbb0225302ad906117696"
+  } ],
+  "name" : "suites"
+}

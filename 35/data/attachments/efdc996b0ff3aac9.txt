@@ -1,9 +1,0 @@
-INFO     root:application.py:42 Drop old allure files : 0
-INFO     root:application.py:44 Create dir allure-results
-INFO     WDM:logger.py:26 
-
-INFO     WDM:logger.py:26 ====== WebDriver manager ======
-INFO     WDM:logger.py:26 Current google-chrome version is 96.0.4664
-INFO     WDM:logger.py:26 Get LATEST chromedriver version for 96.0.4664 google-chrome
-INFO     WDM:logger.py:26 Driver [/home/runner/.wdm/drivers/chromedriver/linux64/96.0.4664.45/chromedriver] found in cache
-INFO     root:base_page.py:39 Open https://berpress.github.io/online-grocery-store/

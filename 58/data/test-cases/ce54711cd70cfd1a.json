@@ -1,0 +1,434 @@
+{
+  "uid" : "ce54711cd70cfd1a",
+  "name" : "Проверка возможности совершить покупку единственного товара",
+  "fullName" : "tests.Buying.test_success_buying_one_product#test_success_buying_one_product",
+  "historyId" : "85bbb20ed1c7cc57366be5b1937981be",
+  "time" : {
+    "start" : 1640017070224,
+    "stop" : 1640017072531,
+    "duration" : 2307
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>> = <pages.basket_form.BasketForm object at 0x7fbcc7616070>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7fbcc7616070> = <fixtures.application.Application object at 0x7fbcc7616d90>.basket_form",
+  "statusTrace" : "app = <fixtures.application.Application object at 0x7fbcc7616d90>\n\n    @allure.epic(\"Продуктовый магазин\")\n    @allure.feature(\"Покупка продуктов\")\n    @allure.title(\"Проверка возможности совершить покупку единственного товара\")\n    def test_success_buying_one_product(app):\n        with allure.step(\"Открыть страницу магазина\"):\n            app.main_page.open_page(\"\")\n        with allure.step(\"Проверить отображение продуктов\"):\n            app.main_page.viewing_products_list()\n        with allure.step(\"Набрать продуктов в корзину\"):\n            app.main_page.random_click_on_buying_one_product()\n        with allure.step(\"Открыть корзину\"):\n            app.main_page.click_basket_icon()\n            app.basket_form.basket_form_is_opened()\n        with allure.step(\"Проверить, что в корзине находятся товары\"):\n>           assert app.basket_form.check_shopping_list() != \"Cart is Empty\"\nE           AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\nE            +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>>()\nE            +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>> = <pages.basket_form.BasketForm object at 0x7fbcc7616070>.check_shopping_list\nE            +      where <pages.basket_form.BasketForm object at 0x7fbcc7616070> = <fixtures.application.Application object at 0x7fbcc7616d90>.basket_form\n\ntests/Buying/test_success_buying_one_product.py:18: AssertionError",
+  "flaky" : true,
+  "newFailed" : true,
+  "beforeStages" : [ {
+    "name" : "screenshot_after_test",
+    "time" : {
+      "start" : 1640017070224,
+      "stop" : 1640017070224,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1640017052256,
+      "stop" : 1640017053999,
+      "duration" : 1743
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1640017052183,
+      "stop" : 1640017052256,
+      "duration" : 73
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>> = <pages.basket_form.BasketForm object at 0x7fbcc7616070>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7fbcc7616070> = <fixtures.application.Application object at 0x7fbcc7616d90>.basket_form",
+    "statusTrace" : "app = <fixtures.application.Application object at 0x7fbcc7616d90>\n\n    @allure.epic(\"Продуктовый магазин\")\n    @allure.feature(\"Покупка продуктов\")\n    @allure.title(\"Проверка возможности совершить покупку единственного товара\")\n    def test_success_buying_one_product(app):\n        with allure.step(\"Открыть страницу магазина\"):\n            app.main_page.open_page(\"\")\n        with allure.step(\"Проверить отображение продуктов\"):\n            app.main_page.viewing_products_list()\n        with allure.step(\"Набрать продуктов в корзину\"):\n            app.main_page.random_click_on_buying_one_product()\n        with allure.step(\"Открыть корзину\"):\n            app.main_page.click_basket_icon()\n            app.basket_form.basket_form_is_opened()\n        with allure.step(\"Проверить, что в корзине находятся товары\"):\n>           assert app.basket_form.check_shopping_list() != \"Cart is Empty\"\nE           AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\nE            +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>>()\nE            +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>> = <pages.basket_form.BasketForm object at 0x7fbcc7616070>.check_shopping_list\nE            +      where <pages.basket_form.BasketForm object at 0x7fbcc7616070> = <fixtures.application.Application object at 0x7fbcc7616d90>.basket_form\n\ntests/Buying/test_success_buying_one_product.py:18: AssertionError",
+    "steps" : [ {
+      "name" : "Открыть страницу магазина",
+      "time" : {
+        "start" : 1640017070224,
+        "stop" : 1640017070275,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить отображение продуктов",
+      "time" : {
+        "start" : 1640017070275,
+        "stop" : 1640017070399,
+        "duration" : 124
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Набрать продуктов в корзину",
+      "time" : {
+        "start" : 1640017070399,
+        "stop" : 1640017070436,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Открыть корзину",
+      "time" : {
+        "start" : 1640017070436,
+        "stop" : 1640017070507,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверить, что в корзине находятся товары",
+      "time" : {
+        "start" : 1640017070507,
+        "stop" : 1640017072531,
+        "duration" : 2024
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7fbcc7616070>> = <pages.basket_form.BasketForm object at 0x7fbcc7616070>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7fbcc7616070> = <fixtures.application.Application object at 0x7fbcc7616d90>.basket_form\n",
+      "statusTrace" : "  File \"/home/runner/work/Innopolis_final/Innopolis_final/tests/Buying/test_success_buying_one_product.py\", line 18, in test_success_buying_one_product\n    assert app.basket_form.check_shopping_list() != \"Cart is Empty\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e79aaed37d6a8a5b",
+      "name" : "log",
+      "source" : "e79aaed37d6a8a5b.txt",
+      "type" : "text/plain",
+      "size" : 182
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "screenshot_after_test::0",
+    "time" : {
+      "start" : 1640017072572,
+      "stop" : 1640017072679,
+      "duration" : 107
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5eaa00d0585ee9e4",
+      "name" : "screenshot",
+      "source" : "5eaa00d0585ee9e4.png",
+      "type" : "image/png",
+      "size" : 132052
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "app::0",
+    "time" : {
+      "start" : 1640017078352,
+      "stop" : 1640017078414,
+      "duration" : 62
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Покупка продуктов"
+  }, {
+    "name" : "epic",
+    "value" : "Продуктовый магазин"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.Buying"
+  }, {
+    "name" : "suite",
+    "value" : "test_success_buying_one_product"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-848"
+  }, {
+    "name" : "thread",
+    "value" : "2723-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.Buying.test_success_buying_one_product"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 21,
+        "unknown" : 0,
+        "total" : 31
+      },
+      "items" : [ {
+        "uid" : "8b38388f15228fa0",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/57//#testresult/8b38388f15228fa0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640016619413,
+          "stop" : 1640016622963,
+          "duration" : 3550
+        }
+      }, {
+        "uid" : "eedb7fc64ece1fb3",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54//#testresult/eedb7fc64ece1fb3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640014875600,
+          "stop" : 1640014879183,
+          "duration" : 3583
+        }
+      }, {
+        "uid" : "755e65f4d11a33fd",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/56//#testresult/755e65f4d11a33fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640013331924,
+          "stop" : 1640013335498,
+          "duration" : 3574
+        }
+      }, {
+        "uid" : "2ec8a7c78f3bd622",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/55//#testresult/2ec8a7c78f3bd622",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640012923989,
+          "stop" : 1640012927418,
+          "duration" : 3429
+        }
+      }, {
+        "uid" : "4c231aed43ee7c66",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/54//#testresult/4c231aed43ee7c66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640010939140,
+          "stop" : 1640010942904,
+          "duration" : 3764
+        }
+      }, {
+        "uid" : "2afbd7bd3d0c121e",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/53//#testresult/2afbd7bd3d0c121e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639985006590,
+          "stop" : 1639985010070,
+          "duration" : 3480
+        }
+      }, {
+        "uid" : "83186b61f511163e",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/52//#testresult/83186b61f511163e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984807768,
+          "stop" : 1639984811308,
+          "duration" : 3540
+        }
+      }, {
+        "uid" : "b68b9eecce6ebc1c",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/51//#testresult/b68b9eecce6ebc1c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984587606,
+          "stop" : 1639984591159,
+          "duration" : 3553
+        }
+      }, {
+        "uid" : "6e9e502debf8434e",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/50//#testresult/6e9e502debf8434e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639984200330,
+          "stop" : 1639984203848,
+          "duration" : 3518
+        }
+      }, {
+        "uid" : "4dd292474e29cbe",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/50//#testresult/4dd292474e29cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639983039394,
+          "stop" : 1639983042940,
+          "duration" : 3546
+        }
+      }, {
+        "uid" : "5e6965fba417baed",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/48//#testresult/5e6965fba417baed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982805299,
+          "stop" : 1639982808687,
+          "duration" : 3388
+        }
+      }, {
+        "uid" : "2775397bdaa6c0ab",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/47//#testresult/2775397bdaa6c0ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982659779,
+          "stop" : 1639982663112,
+          "duration" : 3333
+        }
+      }, {
+        "uid" : "3b2f8c6f53eb93cf",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/3b2f8c6f53eb93cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982492450,
+          "stop" : 1639982494973,
+          "duration" : 2523
+        }
+      }, {
+        "uid" : "33b5f6c94716788c",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/33b5f6c94716788c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639982275687,
+          "stop" : 1639982278301,
+          "duration" : 2614
+        }
+      }, {
+        "uid" : "377ca96120fdc77b",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/46//#testresult/377ca96120fdc77b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981840299,
+          "stop" : 1639981842712,
+          "duration" : 2413
+        }
+      }, {
+        "uid" : "ca16ac992984b0b7",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/45//#testresult/ca16ac992984b0b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981286478,
+          "stop" : 1639981289339,
+          "duration" : 2861
+        }
+      }, {
+        "uid" : "f599bbd05d41bd09",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/f599bbd05d41bd09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980943366,
+          "stop" : 1639980945911,
+          "duration" : 2545
+        }
+      }, {
+        "uid" : "ec0c035657107c5",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/44//#testresult/ec0c035657107c5",
+        "status" : "broken",
+        "statusDetails" : "ValueError: empty range for randrange() (1, 0, -1)",
+        "time" : {
+          "start" : 1639980621992,
+          "stop" : 1639980632068,
+          "duration" : 10076
+        }
+      }, {
+        "uid" : "e1a1e29f4287e877",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/43//#testresult/e1a1e29f4287e877",
+        "status" : "failed",
+        "statusDetails" : "AssertionError: assert 'Cart is Empty' != 'Cart is Empty'\n +  where 'Cart is Empty' = <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f8cdee4fd00>>()\n +    where <bound method BasketForm.check_shopping_list of <pages.basket_form.BasketForm object at 0x7f8cdee4fd00>> = <pages.basket_form.BasketForm object at 0x7f8cdee4fd00>.check_shopping_list\n +      where <pages.basket_form.BasketForm object at 0x7f8cdee4fd00> = <fixtures.application.Application object at 0x7f8cdee4f160>.basket_form",
+        "time" : {
+          "start" : 1639978175554,
+          "stop" : 1639978176819,
+          "duration" : 1265
+        }
+      }, {
+        "uid" : "d36efd088455a874",
+        "reportUrl" : "https://gonuskus.github.io/Innopolis_final/42//#testresult/d36efd088455a874",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639977960261,
+          "stop" : 1639977962610,
+          "duration" : 2349
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ce54711cd70cfd1a.json",
+  "parameterValues" : [ ]
+}
