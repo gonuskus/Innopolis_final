@@ -34,7 +34,11 @@ class BasketForm(BasePage):
             "span.secondary-content"
         )
         for i in range(len(basket_list)):
-            self.find_element(BasketFormLocator.DELETE_PRODUCT_FROM_BASKET).click()
+            # self.find_element(BasketFormLocator.DELETE_PRODUCT_FROM_BASKET).click()
+            button = self.find_clickable_element(
+                BasketFormLocator.DELETE_PRODUCT_FROM_BASKET
+            )
+            self.app.wd.execute_script("arguments[0].click();", button)
         logger.info("Вasket has been emptied")
 
     def check_success_buying_msg(self):
