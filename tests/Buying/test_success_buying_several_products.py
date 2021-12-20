@@ -20,5 +20,3 @@ def test_success_buying_several_products(app):
         app.basket_form.click_buying_btn()
     with allure.step("Проверить, что появилось сообщение об успешности покупки"):
         assert app.basket_form.check_success_buying_msg() == "Pay done!"
-    with allure.step("Закрыть форму Корзина"):
-        app.basket_form.close_basket()
