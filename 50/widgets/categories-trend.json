@@ -4,6 +4,11 @@
   "reportName" : "Allure Report with history",
   "data" : { }
 }, {
+  "buildOrder" : 50,
+  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/50/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
   "buildOrder" : 48,
   "reportUrl" : "https://gonuskus.github.io/Innopolis_final/48/",
   "reportName" : "Allure Report with history",
@@ -125,13 +130,5 @@
   "reportName" : "Allure Report with history",
   "data" : {
     "Test defects" : 4
-  }
-}, {
-  "buildOrder" : 33,
-  "reportUrl" : "https://gonuskus.github.io/Innopolis_final/33/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "Product defects" : 1,
-    "Test defects" : 3
   }
 } ]
