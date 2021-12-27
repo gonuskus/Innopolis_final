@@ -1,0 +1,140 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "Basket",
+      "children" : [ {
+        "name" : "test_checking_basket_form",
+        "children" : [ {
+          "name" : "Проверка стартового состояния Корзины",
+          "uid" : "27c94a1e554a7f76",
+          "parentUid" : "0891c916d60e17101d7ebb02786cb4c7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640584941513,
+            "stop" : 1640584945503,
+            "duration" : 3990
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0891c916d60e17101d7ebb02786cb4c7"
+      }, {
+        "name" : "test_cleaning_basket_after_buying",
+        "children" : [ {
+          "name" : "Проверка очистки формы Корзины после совершения покупки",
+          "uid" : "363c7966f9162d3",
+          "parentUid" : "481b162244e7248006b19820f23dc354",
+          "status" : "broken",
+          "time" : {
+            "start" : 1640584945603,
+            "stop" : 1640584957874,
+            "duration" : 12271
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "481b162244e7248006b19820f23dc354"
+      }, {
+        "name" : "test_deleting_products_from_basket",
+        "children" : [ {
+          "name" : "Проверка очистки формы Корзины до совершения покупки",
+          "uid" : "b4d1cc2f784b6de0",
+          "parentUid" : "b3966efe2dae3542e4d4a3bbb6577217",
+          "status" : "failed",
+          "time" : {
+            "start" : 1640584957990,
+            "stop" : 1640584968087,
+            "duration" : 10097
+          },
+          "flaky" : false,
+          "newFailed" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b3966efe2dae3542e4d4a3bbb6577217"
+      } ],
+      "uid" : "8881e36b15ec057b311547556ddfab16"
+    }, {
+      "name" : "Buying",
+      "children" : [ {
+        "name" : "test_success_buying_one_product",
+        "children" : [ {
+          "name" : "Проверка возможности совершить покупку единственного товара",
+          "uid" : "8e56f1d11c83d854",
+          "parentUid" : "22c9d23b8a7d0d1c1a2581be82dd4e21",
+          "status" : "failed",
+          "time" : {
+            "start" : 1640584968152,
+            "stop" : 1640584978243,
+            "duration" : 10091
+          },
+          "flaky" : true,
+          "newFailed" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "22c9d23b8a7d0d1c1a2581be82dd4e21"
+      }, {
+        "name" : "test_success_buying_several_products",
+        "children" : [ {
+          "name" : "Проверка возможности совершить покупку нескольких товаров",
+          "uid" : "c84836ed965d93ec",
+          "parentUid" : "3fc92ee8be5c41ee6eb6b98ea78f0515",
+          "status" : "failed",
+          "time" : {
+            "start" : 1640584978304,
+            "stop" : 1640584988545,
+            "duration" : 10241
+          },
+          "flaky" : false,
+          "newFailed" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "3fc92ee8be5c41ee6eb6b98ea78f0515"
+      } ],
+      "uid" : "88b657b5caa4f4edf4347be2f889f14a"
+    }, {
+      "name" : "Search",
+      "children" : [ {
+        "name" : "test_failed_searching",
+        "children" : [ {
+          "name" : "Проверка поиска несуществующего продукта",
+          "uid" : "b2d8fb753fb5be91",
+          "parentUid" : "4339f5f6e6954416307504abc8ec357f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1640584988600,
+            "stop" : 1640584998651,
+            "duration" : 10051
+          },
+          "flaky" : false,
+          "newFailed" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4339f5f6e6954416307504abc8ec357f"
+      }, {
+        "name" : "test_success_searching",
+        "children" : [ {
+          "name" : "Проверка поиска продуктов на сайте магазина",
+          "uid" : "edc92600eaa5ba83",
+          "parentUid" : "e2e0a6d7e59e43f33123a69ec38125cf",
+          "status" : "failed",
+          "time" : {
+            "start" : 1640584998716,
+            "stop" : 1640585008805,
+            "duration" : 10089
+          },
+          "flaky" : false,
+          "newFailed" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e2e0a6d7e59e43f33123a69ec38125cf"
+      } ],
+      "uid" : "ed1d4a4a5c9eb10c641ede11ca401873"
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ],
+  "name" : "packages"
+}
